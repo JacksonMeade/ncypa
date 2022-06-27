@@ -197,6 +197,10 @@ img {
     z-index: 2;
 }
 
+.skyline-style-border.adjust {
+    bottom: -0.1rem;
+}
+
 .main-4 {
     padding-bottom: 5rem;
 }
