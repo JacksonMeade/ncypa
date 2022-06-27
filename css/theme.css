@@ -147,7 +147,7 @@ img {
 
 .jumbotron .feature img {
     position: relative;
-    max-height: 500px;
+    max-height: 400px;
 }
 
 @media only screen and (min-width: 41rem) {
