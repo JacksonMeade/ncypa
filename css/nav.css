@@ -165,8 +165,9 @@ background-color: white;
 .overlay ul li a.logo::after {
     content: "North Carolina Young People's Alliance";
     position: absolute;
+    white-space: nowrap;
     top: 4.2rem;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
     text-align: center;
     left: 50%;
     transform: translateX(-50%);

@@ -1,3 +1,7 @@
+/* 
+ * @author Jackson Meade
+ */
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -45,6 +49,11 @@ img {
     font-size: 1.25rem;
 }
 
+.button-inverse {
+    background: white;
+    color: black;
+}
+
 .button:before,
 .button:after {
     width: 4.4em;
@@ -57,6 +66,11 @@ img {
     transition: transform 0.3s ease;
     transform: scale(0);
     z-index: -1;
+}
+
+.button-inverse:before,
+.button-inverse:after {
+    background: white;
 }
 
 .button:before {
@@ -117,9 +131,7 @@ img {
     text-transform: uppercase;
     font-size: 9vw;
 
-    color: transparent;
-    background: linear-gradient(90deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 100%);
-    background-clip: text;
+    color: white;
 
     text-align: right;
 
@@ -149,6 +161,55 @@ img {
     position: relative;
     max-height: 400px;
 }
+
+.main-3 {
+    background: url('../img/svg/colorful-bkg-mobile.svg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-clip: unset;
+    padding: 5rem 0rem;
+    margin-top: 2rem;
+}
+
+.main-3, .main-3 h1 {
+    color: white;
+}
+
+.main-4 > .row {
+    min-height: 710px;
+    height: calc(190vw / 2.66666667);
+    max-height: 90vh;
+}
+
+.skyline-style-border {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.skyline-style-border.adjust {
+    bottom: -0.5rem;
+}
+
+.main-5 {
+    padding-bottom: 5rem;
+}
+
+.main-5 .row > div {
+    display: flex;
+}
+
+.main-5 img {
+    width: 100%;
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 41rem) {
     .button {
@@ -192,41 +253,14 @@ img {
         max-height: auto;
         min-height: 550px;
     }
+    .main-3 {
+        background: url('../img/svg/colorful-bkg.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-clip: unset;
+    }
+
+    .main-4 {
+        padding-top: 5rem;
+    }
 }
-
-.main-3 > .row {
-    min-height: 710px;
-    height: calc(190vw / 2.66666667);
-    max-height: 90vh;
-}
-
-.skyline-style-border {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-}
-
-.skyline-style-border.adjust {
-    bottom: -0.5rem;
-}
-
-.main-4 {
-    padding-bottom: 5rem;
-}
-
-.main-4 .row > div {
-    display: flex;
-}
-
-.main-4 img {
-    width: 100%;
-    align-self: center;
-}
-
-.footer {
-    text-align: center;
-}
-
-
