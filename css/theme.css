@@ -30,7 +30,6 @@ img {
 
 .wrapper {
     padding: 0;
-    filter: url('#goo');
 }
 
 .button {
@@ -54,24 +53,7 @@ img {
     color: black;
 }
 
-.button:before,
-.button:after {
-    width: 4.4em;
-    height: 2.95em;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background: black;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    transform: scale(0);
-    z-index: -1;
-}
 
-.button-inverse:before,
-.button-inverse:after {
-    background: white;
-}
 
 .button:before {
     top: -20%;
@@ -164,7 +146,7 @@ img {
 
 .main-3 {
     background: url('../img/svg/colorful-bkg-mobile.svg');
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-clip: unset;
     padding: 5rem 0rem;
@@ -217,8 +199,28 @@ img {
     }
 
     .wrapper {
+        filter: url('#goo');
         padding: 1.5rem 0;
     }
+    
+    .button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button-inverse:before,
+.button-inverse:after {
+    background: white;
+}
 
     .jumbotron, .footer {
         background: rgb(15,86,151);
