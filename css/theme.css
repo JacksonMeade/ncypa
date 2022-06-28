@@ -170,6 +170,17 @@ img {
 
         margin-right: auto;
         margin-left: 3rem;
+
+        position: relative;
+    }
+
+    .jumbotron h1::before {
+        content: "NCYPA";
+        position: absolute;
+        font-size: 2rem;
+        top: -2rem;
+        left: 0;
+        color: rgba(255, 255, 255, 0.185);
     }
 
     .jumbotron .feature {
