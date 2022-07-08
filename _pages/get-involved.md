@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Get Involved"
 date: 2018-07-08 00:00:00 -0000
 category: [Join]
