@@ -20,14 +20,14 @@ We are a group of young people who are tired of being ignored by politicians. Ou
 
 We mobilize students at colleges across the state to vote and advocate for policy change that young people care about. Currently, our members are advocating for Election Holidays at their universities, helping more of their peers make it to the polls. By mobilizing students, we are building a large coalition of young voters and advocates who are ready to put pressure on elected officials to prioritize youth-focused change.
 
-STAY UP TO DATE
+## Stay Up to Date
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 First Name:            Last Name:
 Email:
 Phone Number:
 [Button]Sign Up[/Button]
 
-Follow up on social media
+## Follow Up on Social Media
 [[Social media icons]]
 Instagram - https://www.instagram.com/youngpeoplesalliance/
 Twitter - https://twitter.com/ncypalliance
