@@ -155,6 +155,10 @@ img {
     bottom: -0.5rem;
 }
 
+.minitron .border {
+    bottom: -0.1rem;
+}
+
 .jumbotron .feature img {
     position: relative;
     max-height: 400px;
