@@ -15,12 +15,6 @@ Email:
 Phone Number:
 [Sign Up](#)
 
-## Follow Us on Social Media
-![Instagram]({{ site.url }}/assets/img/svg/instagram.svg)
-Instagram - https://www.instagram.com/youngpeoplesalliance/
-Twitter - https://twitter.com/ncypalliance
-Linkedin - https://www.linkedin.com/company/ncypa
-
 ## CONTACT US
 Sign up to volunteer, discuss a partnership opportunity, or otherwise get in touch. If you would like to volunteer, please include your school and year in school in your message.
 First Name:            Last Name:
@@ -33,7 +27,3 @@ Subject:
 * Other
 Message: 
 [Button]Submit[/Button]
-
-## DONATE
-Support our youth movement to mobilize thousands of new young voters and shake up the status quo!
-
