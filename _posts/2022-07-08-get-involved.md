@@ -13,12 +13,12 @@ Sign up for our newsletter for updates on our work, petitions and protests you c
 
 <form class="rendered-form">
     <div class="row">
-        <div class="formbuilder-text form-group field-text-1657310892954 col-xs-5">
+        <div class="formbuilder-text form-group field-text-1657310892954 col-xs-12 col-md-5">
             <label for="text-1657310892954" class="formbuilder-text-label">First Name
                 <span class="formbuilder-required">*</span></label>
             <input type="text" class="form-control" name="text-1657310892954" access="false" id="text-1657310892954" required="required" aria-required="true">
         </div>
-        <div class="formbuilder-text form-group field-text-1657310952708 col-xs-5 col-xs-offset-2">
+        <div class="formbuilder-text form-group field-text-1657310952708 col-xs-12 col-md-5 col-md-offset-2">
             <label for="text-1657310952708" class="formbuilder-text-label">Last Name
                 <span class="formbuilder-required">*</span></label>
             <input type="text" class="form-control" name="text-1657310952708" access="false" id="text-1657310952708" required="required" aria-required="true">
