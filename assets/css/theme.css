@@ -311,6 +311,7 @@ img {
 .team-member .photo {
     position: relative;
     width:100%;
+    margin-bottom: 1rem;
 }
 
 .team-member .photo:before {
