@@ -12,9 +12,9 @@ md-header img: ''
     {% for member in site.data.members %}
 
     
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="col-xs-12 col-sm-6 col-md-3">
         <img src="{{ site.url}}/assets/img/profiles/{{ member.imglink }}" class="img-responsive img-circle" alt="{{ member.name }}'s profile photo">
-        <h3>{{ member.name }}</h3>
+        <h4>{{ member.name }}</h4>
         <p><em>{{ member.position }}</em></p>
         <small>{{ member.year }} at {{ member.school }}</small>
         <small>{{ member.hometown }}</small>
