@@ -307,3 +307,26 @@ img {
 .embed iframe {
     margin: 0 auto;
 }
+
+.team-member .photo {
+    position: relative;
+    width: calc(100% - 1rem);
+    margin: 1rem;
+}
+
+.team-member .photo:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.team-member .photo img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100%;
+}
