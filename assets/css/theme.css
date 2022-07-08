@@ -299,7 +299,18 @@ img {
     }
 
     .post-content {
-        padding: 0rem 3rem;
+        padding: 0rem 5rem;
     }
 }
 
+
+.embed {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed iframe {
+    margin: 0 auto;
+}
