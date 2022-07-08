@@ -26,9 +26,3 @@ First Name:            Last Name:
 Email:
 Phone Number:
 [Button]Sign Up[/Button]
-
-## Follow Up on Social Media
-[[Social media icons]]
-Instagram - https://www.instagram.com/youngpeoplesalliance/
-Twitter - https://twitter.com/ncypalliance
-Linkedin - https://www.linkedin.com/company/ncypa
