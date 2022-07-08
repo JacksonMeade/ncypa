@@ -213,6 +213,10 @@ img {
 }
 
 
+.post-content {
+    padding: 0rem 1rem;
+}
+
 @media only screen and (min-width: 41rem) {
     .button {
         margin-top: 0em;
@@ -293,4 +297,9 @@ img {
     .main-4 {
         padding-top: 5rem;
     }
+
+    .post-content {
+        padding: 0rem 3rem;
+    }
 }
+
