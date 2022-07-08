@@ -1,0 +1,9 @@
+.post-content {
+    padding: 0rem 1rem;
+}
+
+@media only screen and (min-width: 41rem) {
+    .post-content {
+        padding: 0rem 5rem;
+    }
+}

@@ -212,11 +212,6 @@ img {
     text-align: center;
 }
 
-
-.post-content {
-    padding: 0rem 1rem;
-}
-
 @media only screen and (min-width: 41rem) {
     .button {
         margin-top: 0em;
@@ -246,7 +241,7 @@ img {
     background: white;
 }
 
-    .jumbotron, .footer {
+    .jumbotron, .minitron, .footer {
         background: rgb(15,86,151);
         background: linear-gradient(90deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
     }
@@ -298,9 +293,7 @@ img {
         padding-top: 5rem;
     }
 
-    .post-content {
-        padding: 0rem 5rem;
-    }
+
 }
 
 
