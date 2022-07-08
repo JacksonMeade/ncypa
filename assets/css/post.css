@@ -14,9 +14,15 @@
     font-size: 3rem;
 }
 
-/* objects */
 .post-content h3 {
     font-size: 2.4rem;
+}
+
+.social-icon {
+    max-width: 1rem;
+    padding: 0.5rem;
+    background: black;
+    border-radius: 50%;
 }
 
 /* buttons */
