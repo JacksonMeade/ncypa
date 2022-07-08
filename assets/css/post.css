@@ -22,6 +22,18 @@
 	font-size: 2.4rem;
 }
 
+.post-content button {
+    border: none;
+    cursor: pointer;
+}
+
+.rendered-form input {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid gray;
+}
+
 .social-row {
 	justify-content: space-between;
 	width: 35%;
