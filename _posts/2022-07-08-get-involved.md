@@ -16,7 +16,7 @@ Phone Number:
 [Sign Up](#)
 
 ## Follow Us on Social Media
-![Instagram](svg/instagram.svg)
+![Instagram]({{ site.url }}/assets/img/svg/instagram.svg)
 Instagram - https://www.instagram.com/youngpeoplesalliance/
 Twitter - https://twitter.com/ncypalliance
 Linkedin - https://www.linkedin.com/company/ncypa
