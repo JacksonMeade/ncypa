@@ -18,8 +18,13 @@
     </div>
 </section>
 
-<section class="post-content">
-    {{ content }}
-</section>
+<main>
+    <section class="post-content col-xs-12 col-md-8 col-lg-9">
+        {{ content }}
+    </section>
+    <section class="col-xs-12 col-md-4 col-lg-3">
+        {% include sidebar.html %}
+    </section>
+</main>
 
 {% include footer.html %}
