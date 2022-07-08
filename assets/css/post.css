@@ -1,86 +1,99 @@
 /* layout */
 .post-layout {
-    padding: 0rem 1rem;
+	padding: 0rem 1rem;
 }
 
 @media only screen and (min-width: 41rem) {
-    .post-layout {
-        padding: 0rem 5rem;
-    }
+	.post-layout {
+		padding: 0rem 5rem;
+	}
+}
+
+.sidebar {
+	position: sticky;
 }
 
 /* objects */
 .post-content h2 {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 .post-content h3 {
-    font-size: 2.4rem;
+	font-size: 2.4rem;
+}
+
+.social-row {
+	justify-content: space-between;
+	width: 50%;
 }
 
 .social-icon {
-    max-width: 1rem;
-    padding: 0.5rem;
-    background: black;
-    border-radius: 50%;
+	max-width: 1rem;
+	padding: 0.5rem;
+	background: black;
+	border-radius: 50%;
 }
 
 /* buttons */
 .post-content a {
-    margin-top: 1em;
-    display: inline-block;
-    text-align: center;
-    background: black;
-    color: white;
-    font-weight: bold;
-    padding: 1em 1.18em;
-    line-height: 1;
-    border-radius: 1em;
-    position: relative;
-    min-width: 8.23em;
-    text-decoration: none;
-    font-size: 1.25rem;
+	margin-top: 1em;
+	display: inline-block;
+	text-align: center;
+	background: black;
+	color: white;
+	font-weight: bold;
+	padding: 1em 1.18em;
+	line-height: 1;
+	border-radius: 1em;
+	position: relative;
+	min-width: 8.23em;
+	text-decoration: none;
+	font-size: 1.25rem;
 }
 
 .post-content a:before {
-    top: -20%;
-    left: 20%;
+	top: -20%;
+	left: 20%;
 }
 
 .post-content a:after {
-    bottom: -25%;
-    right: 20%;
+	bottom: -25%;
+	right: 20%;
 }
 
 .post-content a:hover:before,
 .post-content a:hover:after {
-    transform: none;
+	transform: none;
 }
 
 @media only screen and (min-width: 41rem) {
-    .post-content a {
-        margin-top: 0em;
-        
-        filter: url('#goo');
-        padding: 1.5rem 0;
-    }
-    
-    .post-content a:before,
-.post-content a:after {
-    width: 4.4em;
-    height: 2.95em;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background: black;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    transform: scale(0);
-    z-index: -1;
-}
+	.social-row {
+		width: 100%;
+	}
 
-.post-content a-inverse:before,
-.post-content a-inverse:after {
-    background: white;
-}
+	.post-content a {
+		margin-top: 0em;
+
+		filter: url('#goo');
+		padding: 1.5rem 0;
+	}
+
+	.post-content a:before,
+	.post-content a:after {
+		width: 4.4em;
+		height: 2.95em;
+		position: absolute;
+		content: "";
+		display: inline-block;
+		background: black;
+		border-radius: 50%;
+		transition: transform 0.3s ease;
+		transform: scale(0);
+		z-index: -1;
+	}
+
+	.post-content a-inverse:before,
+	.post-content a-inverse:after {
+		background: white;
+	}
 }
