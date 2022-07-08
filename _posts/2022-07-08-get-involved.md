@@ -2,7 +2,7 @@
 layout: post
 title: "Get Involved"
 date: 2022-07-08 00:00:00 -0000
-category: [Join]
+category: [Information]
 permalink: get-involved
 sm-header-img: ''
 md-header img: ''
