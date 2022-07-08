@@ -329,7 +329,7 @@ img {
     border-radius: 2rem;
 }
 
-.team-member .photo img:before {
+.team-member .photo:after {
     z-index: -1;
     width: calc(100% - 1rem);
     height: calc(100% - 1rem);
