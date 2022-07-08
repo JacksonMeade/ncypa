@@ -65,11 +65,6 @@ Sign up to volunteer, discuss a partnership opportunity, or otherwise get in tou
         </label>
         <input type="text" class="form-control" name="text-1657310990549" access="false" id="text-1657310990549">
     </div>
-    <div class="formbuilder-button form-group field-button-1657311047983">
-        <div class="wrapper">
-            <button type="submit" class="button btn-default btn" name="button-1657311047983" access="false" style="default" id="button-1657311047983">Sign Up</button>
-        </div>
-    </div>
         <div class="formbuilder-radio-group form-group field-radio-group-1657311952752">
         <label for="radio-group-1657311952752" class="formbuilder-radio-group-label">Subject<span class="formbuilder-required">*</span></label>
         <div class="radio-group">
@@ -94,5 +89,10 @@ Sign up to volunteer, discuss a partnership opportunity, or otherwise get in tou
     <div class="formbuilder-textarea form-group field-textarea-1657312310858">
         <label for="textarea-1657312310858" class="formbuilder-textarea-label">Message</label>
         <textarea type="textarea" placeholder="Please include some details relevant to your inquiry." class="form-control" name="textarea-1657312310858" access="false" id="textarea-1657312310858"></textarea>
+    </div>
+    <div class="formbuilder-button form-group field-button-1657311047983">
+        <div class="wrapper">
+            <button type="submit" class="button btn-default btn" name="button-1657311047983" access="false" style="default" id="button-1657311047983">Sign Up</button>
+        </div>
     </div>
 </form>
