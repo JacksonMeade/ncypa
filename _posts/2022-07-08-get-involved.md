@@ -3,7 +3,7 @@ layout: post
 title: "Get Involved"
 date: 2022-07-08 00:00:00 -0000
 category: [Join]
-permalink: Join/Involve
+permalink: get-involved
 blurb: "TSA is one of nine Career and Technical Student Organizations."
 ---
 
