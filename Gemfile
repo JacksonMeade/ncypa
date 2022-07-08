@@ -8,3 +8,4 @@ gem "jekyll", "~> 4.2"
 
 
 gem 'NCYPA', path: ''
+
