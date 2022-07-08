@@ -13,9 +13,9 @@ md-header img: ''
 
     
     <div class="col-xs-12 col-sm-6 col-md-4">
-        <img src="{{ site.url}}/assets/img/profiles/{{ member.imglink }}" class="img-responsive img-circle" alt="{{ member.name }}'s profile photo">
-        <h4>{{ member.name }}</h4>
-        <p><em>{{ member.position }}</em></p>
+        <img src="{{ site.url}}/assets/img/profiles/{{ member.name | strip }}" class="img-responsive img-circle" alt="{{ member.name }}'s profile photo">
+        <h3 style="margin: 0">{{ member.name }}</h4>
+        <p style="margin: 0"><em>{{ member.position }}</em></p>
         <small>{{ member.year }} at {{ member.school }}</small>
         <small>{{ member.hometown }}</small>
     </div>
