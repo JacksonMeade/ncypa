@@ -1,1 +1,6 @@
 permalink: /:category/:title:output_ext
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

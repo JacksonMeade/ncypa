@@ -103,25 +103,41 @@ img {
     height: 70vh;
 }
 
-.jumbotron, .footer {
+.minitron {
+    position: relative;
+    min-height: 25vh;
+}
+
+.jumbotron, .minitron, .footer {
     color: white;
     background: rgb(15,86,151);
     background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
 }
 
-.jumbotron h1 {
+.jumbotron h1, .minitron h1 {
     text-transform: uppercase;
-    font-size: 9vw;
 
     color: white;
 
     text-align: right;
 
+    z-index: 4;
+}
+
+.jumbotron h1 {
+    font-size: 9vw;
+
     margin-top: 5rem;
     margin-right: 1rem;
     margin-left: 0rem;
+}
 
-    z-index: 4;
+.minitron h1 {
+    font-size: 7vw;
+
+    margin-top: 3rem;
+    margin-right: 0.2rem;
+    margin-left: 0rem;
 }
 
 .jumbotron .feature {
@@ -234,6 +250,14 @@ img {
         margin-right: auto;
         margin-left: 3rem;
 
+        position: relative;
+    }
+
+    .minitron h1 {
+        font-size: 6vw;
+        text-align: left;
+        margin-right: auto;
+        margin-left: 3rem;
         position: relative;
     }
 

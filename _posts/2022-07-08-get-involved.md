@@ -4,7 +4,8 @@ title: "Get Involved"
 date: 2022-07-08 00:00:00 -0000
 category: [Join]
 permalink: get-involved
-blurb: "TSA is one of nine Career and Technical Student Organizations."
+sm-header-img: ''
+md-header img: ''
 ---
 
 STAY IN TOUCH
