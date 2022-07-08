@@ -1,3 +1,4 @@
+/* layout */
 .post-content {
     padding: 0rem 1rem;
 }
@@ -6,4 +7,66 @@
     .post-content {
         padding: 0rem 5rem;
     }
+}
+
+/* buttons */
+.post-content a {
+    margin-top: 1em;
+    display: inline-block;
+    text-align: center;
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1.18em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.post-content a:before {
+    top: -20%;
+    left: 20%;
+}
+
+.post-content a:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.post-content a:hover:before,
+.post-content a:hover:after {
+    transform: none;
+}
+
+@media only screen and (min-width: 41rem) {
+    .post-content a {
+        margin-top: 0em;
+    }
+
+    .wrapper {
+        filter: url('#goo');
+        padding: 1.5rem 0;
+    }
+    
+    .post-content a:before,
+.post-content a:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.post-content a-inverse:before,
+.post-content a-inverse:after {
+    background: white;
+}
 }
