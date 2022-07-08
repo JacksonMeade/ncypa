@@ -8,7 +8,7 @@ sm-header-img: ''
 md-header img: ''
 ---
 
-WHO WE ARE
+## Who We Are
 
 Democracy is built upon the representation of constituents. Unfortunately, legislators, civic nonprofit leaders, and other political figures often leave young people’s voices unheard. As high schoolers, our founders, Sam Hiner and Mick Tobin learned this first hand. Whether it was traffic safety concerns or legislation to stop partisan power grabs, their emails, calls, and visits seemed to have little weight compared to lobbyists and other entrenched groups. As young people, we are tired of politicians disregarding young people, and with us, the future of our country. The stakes are higher than ever, and with democracy under threat, Sam, Mick, and their quickly growing movement are committed to transforming youth power in North Carolina. 
 

@@ -9,6 +9,10 @@
     }
 }
 
+.post-content h2 {
+    font-size: 3rem;
+}
+
 /* buttons */
 .post-content a {
     margin-top: 1em;

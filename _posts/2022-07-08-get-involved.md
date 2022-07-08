@@ -8,15 +8,15 @@ sm-header-img: ''
 md-header img: ''
 ---
 
-## STAY IN TOUCH
+## Stay in Touch
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 First Name:            Last Name:
 Email:
 Phone Number:
-[Button]Sign Up[/Button]
+[Sign Up](#)
 
-## Follow up on social media
-[[Social media icons]]
+## Follow Us on Social Media
+![Instagram](svg/instagram.svg)
 Instagram - https://www.instagram.com/youngpeoplesalliance/
 Twitter - https://twitter.com/ncypalliance
 Linkedin - https://www.linkedin.com/company/ncypa
