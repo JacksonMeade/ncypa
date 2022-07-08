@@ -8,20 +8,20 @@ sm-header-img: ''
 md-header img: ''
 ---
 
-# STAY IN TOUCH
+## STAY IN TOUCH
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 First Name:            Last Name:
 Email:
 Phone Number:
 [Button]Sign Up[/Button]
 
-# Follow up on social media
+## Follow up on social media
 [[Social media icons]]
 Instagram - https://www.instagram.com/youngpeoplesalliance/
 Twitter - https://twitter.com/ncypalliance
 Linkedin - https://www.linkedin.com/company/ncypa
 
-# CONTACT US
+## CONTACT US
 Sign up to volunteer, discuss a partnership opportunity, or otherwise get in touch. If you would like to volunteer, please include your school and year in school in your message.
 First Name:            Last Name:
 Email:
@@ -34,7 +34,7 @@ Subject:
 Message: 
 [Button]Submit[/Button]
 
-# DONATE
+## DONATE
 Support our youth movement to mobilize thousands of new young voters and shake up the status quo!
 <div class = "embed">
 <iframe src="https://givebutter.com/embed/c/ncypa" width="100%" height="615px" style="max-width: 601px;" name="givebutter" frameborder="0" scrolling="no" seamless allowpaymentrequest></iframe><script src="https://givebutter.com/js/widget.js"></script>
