@@ -1,0 +1,268 @@
+/* 
+ * @author Jackson Meade
+ */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.row {
+    position: relative;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: black;
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+.wrapper {
+    padding: 0;
+}
+
+.button {
+    margin-top: 1em;
+    display: inline-block;
+    text-align: center;
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1.18em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.button-inverse {
+    background: white;
+    color: black;
+}
+
+
+
+.button:before {
+    top: -20%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.text-l {
+    text-align: left;
+}
+
+.text-c {
+    text-align: center;
+}
+
+.text-r {
+    text-align: right;
+}
+
+.jumbotron {
+    position: relative;
+    height: 70vh;
+}
+
+.jumbotron, .footer {
+    color: white;
+    background: rgb(15,86,151);
+    background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
+}
+
+.jumbotron h1 {
+    text-transform: uppercase;
+    font-size: 9vw;
+
+    color: white;
+
+    text-align: right;
+
+    margin-top: 5rem;
+    margin-right: 1rem;
+    margin-left: 0rem;
+
+    z-index: 4;
+}
+
+.jumbotron .feature {
+    position: absolute;
+    left: 0;
+    right: auto;
+    bottom: 0;
+}
+
+.border {
+    width: 100%;
+    z-index: 3;
+
+    position: absolute;
+    bottom: -0.5rem;
+}
+
+.jumbotron .feature img {
+    position: relative;
+    max-height: 400px;
+}
+
+.main-3 {
+    background: url('../img/svg/colorful-bkg-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: unset;
+    padding: 5rem 0rem;
+    margin-top: 2rem;
+}
+
+.main-3, .main-3 h1 {
+    color: white;
+}
+
+.main-4 > .row {
+    min-height: 710px;
+    height: calc(190vw / 2.66666667);
+    max-height: 90vh;
+}
+
+.skyline-style-border {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.skyline-style-border.adjust {
+    bottom: -0.5rem;
+}
+
+.main-5 {
+    padding-bottom: 5rem;
+}
+
+.main-5 .row > div {
+    display: flex;
+}
+
+.main-5 img {
+    width: 100%;
+    align-self: center;
+}
+
+.footer {
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 41rem) {
+    .button {
+        margin-top: 0em;
+    }
+
+    .wrapper {
+        filter: url('#goo');
+        padding: 1.5rem 0;
+    }
+    
+    .button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button-inverse:before,
+.button-inverse:after {
+    background: white;
+}
+
+    .jumbotron, .footer {
+        background: rgb(15,86,151);
+        background: linear-gradient(90deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
+    }
+
+    .jumbotron h1 {
+        font-size: 7vw;
+        text-align: left;
+
+        margin-right: auto;
+        margin-left: 3rem;
+
+        position: relative;
+    }
+
+    .jumbotron h1::before {
+        content: "NCYPA";
+        position: absolute;
+        font-size: 2rem;
+        top: -2rem;
+        left: 0;
+        color: rgba(255, 255, 255, 0.185);
+    }
+
+    .jumbotron .feature {
+        right: 0;
+        left: auto;
+    }
+
+    .jumbotron .feature img {
+        max-height: auto;
+        min-height: 550px;
+    }
+    .main-3 {
+        background: url('../img/svg/colorful-bkg.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-clip: unset;
+    }
+
+    .main-4 {
+        padding-top: 5rem;
+    }
+}

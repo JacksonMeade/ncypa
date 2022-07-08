@@ -1,0 +1,243 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.no-scroll {
+    position: fixed;
+}
+
+.nav-container * {
+        z-index: 300;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu-container {
+    background-color: transparent;
+    border-radius: 100%;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: auto;
+    left: -120px;
+    top: -120px;
+    transition: all 0.3s;
+}
+.menu-container.full-menu {
+background-color: white;
+    border-radius: 0;
+    padding: 0 !important;
+    position: aboslute;
+    width: 100%;
+    height: 100%;
+    right: auto;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.menu {
+    color: white;
+    font-size: 3.5em;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    right: auto;
+    transition: all 0.3s;
+}
+
+.full-menu .menu {
+    color: rgb(15,86,151);
+    top: 40px;
+    left: 40px;
+    right: auto;
+}
+
+@media only screen and (min-width: 41rem) {
+    .menu-container {
+        left: auto;
+        right: 120px;
+    }
+    .menu-container.full-menu {
+        left: auto;
+        right: 0;
+    }
+    .full-menu .menu {
+        left: auto;
+        right: 40px;
+    }
+    .menu {
+        left: auto;
+        right: -80px;
+    }
+}
+
+.menu i {
+    opacity: 0.7;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+.menu i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    pointer-events: none;
+}
+.overlay .overlay-menu {
+        pointer-events: all;
+}
+.overlay.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 100%;
+}
+.overlay.open li {
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3) {
+    animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+    animation-delay: 0.5s;
+}
+.overlay nav {
+    font-size: 3.2em;
+    position: relative;
+    height: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    text-align: center;
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.overlay ul li {
+    display: block;
+    height: 25%;
+    height: calc(100% / 4);
+    min-height: 50px;
+    position: relative;
+    opacity: 0;
+}
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: rgb(15,86,151);
+    text-decoration: none;
+    font-weight: 700;
+    overflow: hidden;
+    opacity: 0.7;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.overlay ul li a.logo {
+    font-weight: 900;
+    color: black;
+    font-size: 4.2rem;
+}
+.overlay ul li a.logo::after {
+    content: "North Carolina Young People's Alliance";
+    position: absolute;
+    white-space: nowrap;
+    top: 4.2rem;
+    font-size: 0.7rem;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all 0.3s;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.blob {
+    animation: blobby 4s infinite;
+}
+
+.blob2 {
+    animation: blobby2 6s infinite;
+}
+
+@keyframes blobby {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes blobby2 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.18);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.nav svg {
+    position: absolute;
+    top: 0;
+}
+
+#svg-right {
+    display: block;
+    fill: #7b00e0;
+    opacity: 0.5;
+    right: 0;
+    width: 60%;
+    z-index: -10;
+}
+
+#svg-left {
+    fill: #ff006a;
+    margin: 0;
+    width: 60%;
+    z-index: -10;
+}
+
