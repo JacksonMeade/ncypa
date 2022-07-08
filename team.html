@@ -13,7 +13,9 @@ md-header img: ''
 
     
     <div class="col-xs-12 col-sm-6 col-md-4 team-member">
-        <img src="{{ site.url}}/assets/img/profiles/{{ member.name | remove:' ' }}.jpg" class="img-responsive img-circle" alt="{{ member.name }}'s profile photo">
+        <div class="photo">
+            <img src="{{ site.url}}/assets/img/profiles/{{ member.name | remove:' ' }}.jpg" class="profile-img" alt="{{ member.name }}'s profile photo">
+        </div>
         <h3 style="margin: 0">{{ member.name }}</h4>
         <p style="margin: 0"><em>{{ member.position }}</em></p>
         <small>{{ member.year }} at {{ member.school }}</small>
