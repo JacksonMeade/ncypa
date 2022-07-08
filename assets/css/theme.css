@@ -322,10 +322,22 @@ img {
 .team-member .photo img {
     object-fit: cover;
     position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
+    border-radius: 2rem;
+}
+
+.team-member .photo img:before {
+    z-index: -1;
+    width: calc(100% - 1rem);
+    height: calc(100% - 1rem);
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+    background: rgb(191,5,9);
+    background: -moz-radial-gradient(circle, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+    background: radial-gradient(circle, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bf0509",endColorstr="#1b5ba4",GradientType=1); 
 }
