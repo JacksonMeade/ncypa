@@ -330,6 +330,7 @@ img {
 }
 
 .team-member .photo:after {
+    content: "";
     z-index: -1;
     width: calc(100% - 1rem);
     height: calc(100% - 1rem);
