@@ -12,15 +12,17 @@ md-header img: ''
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 
 <form class="rendered-form">
-    <div class="formbuilder-text form-group field-text-1657310892954 col-xs-6">
-        <label for="text-1657310892954" class="formbuilder-text-label">First Name
-            <span class="formbuilder-required">*</span></label>
-        <input type="text" class="form-control" name="text-1657310892954" access="false" id="text-1657310892954" required="required" aria-required="true">
-    </div>
-    <div class="formbuilder-text form-group field-text-1657310952708 col-xs-6">
-        <label for="text-1657310952708" class="formbuilder-text-label">Last Name
-            <span class="formbuilder-required">*</span></label>
-        <input type="text" class="form-control" name="text-1657310952708" access="false" id="text-1657310952708" required="required" aria-required="true">
+    <div class="row">
+        <div class="formbuilder-text form-group field-text-1657310892954 col-xs-6">
+            <label for="text-1657310892954" class="formbuilder-text-label">First Name
+                <span class="formbuilder-required">*</span></label>
+            <input type="text" class="form-control" name="text-1657310892954" access="false" id="text-1657310892954" required="required" aria-required="true">
+        </div>
+        <div class="formbuilder-text form-group field-text-1657310952708 col-xs-6">
+            <label for="text-1657310952708" class="formbuilder-text-label">Last Name
+                <span class="formbuilder-required">*</span></label>
+            <input type="text" class="form-control" name="text-1657310952708" access="false" id="text-1657310952708" required="required" aria-required="true">
+        </div>
     </div>
     <div class="formbuilder-text form-group field-text-1657311029150 col-xs-12">
         <label for="text-1657311029150" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
