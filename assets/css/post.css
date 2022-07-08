@@ -3,6 +3,10 @@
 	padding: 0rem 1rem;
 }
 
+.post-content:not(.sidebar) {
+    padding-right: 4rem !important;
+}
+
 @media only screen and (min-width: 41rem) {
 	.post-layout {
 		padding: 0rem 5rem;
