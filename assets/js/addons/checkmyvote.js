@@ -1,6 +1,6 @@
 const search_header = document.getElementById('search-header');
 const search_input = document.getElementById('search-input');
-const clear_btn = document.getelementById('clear-btn');
+const clear_btn = document.getElementById('clear-btn');
 
 document.body.addEventListener('click', event => {
     if (event.target != searchbar && event.target != clear_btn) {
