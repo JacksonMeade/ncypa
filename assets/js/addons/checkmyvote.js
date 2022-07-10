@@ -11,7 +11,7 @@ function untype() {
 
 search_inputs.forEach((input) => {
     input.addEventListener('input', event => {
-        if (search_input.value.length == 0) {
+        if (input.value.length == 0) {
             if (!search_header.classList.contains('full-height')) {
                 search_header.classList.add('full-height');
             }
