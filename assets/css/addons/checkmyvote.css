@@ -17,6 +17,11 @@
     outline: none;
 }
 
+#search-header h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
 #search-header {
     min-height: 40vh;
 }
