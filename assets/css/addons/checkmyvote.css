@@ -22,6 +22,6 @@
     margin: 0;
 }
 
-#search-header {
-    min-height: 40vh;
+#search-header:not(.full-height) {
+    height: 40vh;
 }
