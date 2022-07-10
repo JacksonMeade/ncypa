@@ -32,6 +32,11 @@ img {
     padding: 0;
 }
 
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
 .button {
     margin-top: 1em;
     display: inline-block;
