@@ -20,9 +20,13 @@ function close_search() {
 }
 
 search_input.addEventListener('input', event => {
-    if (search_input.value.length <= 1) {
-        search_header.classList.toggle('full-height');
+    if (search_input.value.length == 0) {
+        if (!search_header.classList.contains('full-height')) {
+            search_header.classList.add('full-height');
+        }
     } else {
-        // FOR NOW, DO NOTHING
+        if (search_header.classList.contains('full-height')) {
+            search_header.classList.remove('full-height');
+        }
     }
 });
