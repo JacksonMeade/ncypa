@@ -1,5 +1,6 @@
 const search_header = document.getElementById('search-header');
-const search_inputs = [ document.getElementById('search-input')];
+const search_inputs = [];
+for (var i = 2; i > 0; i--) search_inputs.push(document.getElementById(`search-${i}`));
 const clear_btns = [ document.getElementById('clear-btn') ];
 
 function untype() {
