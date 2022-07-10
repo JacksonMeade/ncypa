@@ -23,7 +23,7 @@ function close_search() {
 }
 
 search_input.addEventListener('input', event => {
-    if (searchbar.value.length == 1) {
+    if (search_input.value.length == 1) {
         search_header.classList.toggle('full-height');
     } else {
         // FOR NOW, DO NOTHING
