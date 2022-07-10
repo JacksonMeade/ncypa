@@ -108,7 +108,7 @@ img {
     min-height: 25vh;
 }
 
-.jumbotron, .minitron, .footer {
+.jumbotron, .minitron, .footer, .full-height {
     color: white;
     background: rgb(15,86,151);
     background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
@@ -241,7 +241,7 @@ img {
     background: white;
 }
 
-    .jumbotron, .minitron, .footer {
+    .jumbotron, .minitron, .footer, .full-height {
         background: rgb(15,86,151);
         background: linear-gradient(90deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
     }
@@ -344,4 +344,9 @@ img {
     background: -webkit-linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
     background: linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bf0509",endColorstr="#1b5ba4",GradientType=1); 
+}
+
+.full-height {
+    height: 100vh;
+    transition: height 0.3s ease;
 }
