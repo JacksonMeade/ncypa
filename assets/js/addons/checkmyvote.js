@@ -3,7 +3,7 @@ const search_input = document.getElementById('search-input');
 const clear_btn = document.getElementById('clear-btn');
 
 document.body.addEventListener('click', event => {
-    if (event.target != searchbar && event.target != clear_btn) {
+    if (event.target != search_input && event.target != clear_btn) {
         close_search();
     }
 });
