@@ -19,5 +19,8 @@
 </svg>
 
 <script type="text/javascript" src="assets/js/index.js"></script>
+{% for addon in page.js-addons %}
+<script type="text/javascript" src="assets/js/addons/{{ addon }}"></script>
+{% endfor %}
 </body>
 </html> 
