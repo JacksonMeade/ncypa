@@ -5,7 +5,6 @@
 
 #search-header input {
     width: calc(100% - 2rem);
-    margin: 1rem;
     height: 3rem;
     border: 1px solid white;
     border-radius: 1.5rem;
