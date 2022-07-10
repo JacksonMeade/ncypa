@@ -16,3 +16,7 @@
     font-weight: 300;
     outline: none;
 }
+
+#search-header {
+    min-height: 40vh;
+}
