@@ -1,8 +1,9 @@
 const search_header = document.getElementById('search-header');
 const search_input = document.getElementById('search-input');
+const clear_btn = document.getelementById('clear-btn');
 
 document.body.addEventListener('click', event => {
-    if (event.target != searchbar && event.target != clearbtn) {
+    if (event.target != searchbar && event.target != clear_btn) {
         close_search();
     }
 });
@@ -12,9 +13,7 @@ search_input.addEventListener('focusout', event => {
 });
 
 function untype() {
-    searchbar.value = '';
-    clearbtn.hidden = true;
-    projectsearchview_table.innerHTML = '';
+    search_input.value = '';
 }
 
 function close_search() {
