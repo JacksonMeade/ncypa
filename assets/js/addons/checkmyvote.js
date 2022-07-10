@@ -18,6 +18,9 @@ function untype() {
 
 function close_search() {
     if (search_input.value == '') {
+        
+    }
+    else {
         search_header.classList.toggle('full-height');
     }
 }
