@@ -98,4 +98,4 @@ Sign up to volunteer, discuss a partnership opportunity, or otherwise get in tou
 </form>
 
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ page.url }}';}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.url }}/{{ page.url }}';}"></iframe>
