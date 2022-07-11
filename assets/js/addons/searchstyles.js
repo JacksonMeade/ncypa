@@ -4,6 +4,7 @@ for (var i = 2; i > 0; i--) search_inputs.push(document.getElementById(`search-$
 //const clear_btns = [ document.getElementById('clear-btn') ];
 
 let counts = {};
+let test = true;
 
 function untype() {
     search_inputs.forEach((input) => {
@@ -20,13 +21,13 @@ search_inputs.forEach((input) => {
         search_inputs.forEach((input) => {
             count += input.value.length;
         });
-        let test = search_header.classList.contains('full-height');
         if (count == 0 && !test) {
              window.scrollBy({
                 top: -window.innerHeight,
                 left: 0,
                 behavior: 'smooth'
              });
+             test = true;
 /*             clear_btns.forEach((btn) => {
                 btn.classList.add('hidden');
             }); */
@@ -36,6 +37,7 @@ search_inputs.forEach((input) => {
                 left: 0,
                 behavior: 'smooth'
             });
+            test = false;
 /*             clear_btns.forEach((btn) => {
                 btn.classList.remove('hidden');
             }); */
