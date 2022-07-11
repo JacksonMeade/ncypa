@@ -11,7 +11,7 @@ md-header img: ''
 ## Stay in Touch
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 
-<form class="rendered-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/formResponse">
+<form class="rendered-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/formResponse"  method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <div class="row">
         <div class="formbuilder-text form-group field-entry-273742155 col-xs-12 col-md-5">
             <label for="entry-273742155" class="formbuilder-text-label">First Name
@@ -96,3 +96,6 @@ Sign up to volunteer, discuss a partnership opportunity, or otherwise get in tou
         </div>
     </div>
 </form>
+
+<script type="text/javascript">var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ page.url }}';}"></iframe>
