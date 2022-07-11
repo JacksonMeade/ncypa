@@ -22,8 +22,8 @@ search_inputs.forEach((input) => {
             count += input.value.length;
         });
         if (count == 0 && !test) {
-             window.scrollBy({
-                top: -window.innerHeight,
+             window.scrollTo({
+                top: 0,
                 left: 0,
                 behavior: 'smooth'
              });
