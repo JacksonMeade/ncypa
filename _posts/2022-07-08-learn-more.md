@@ -14,36 +14,38 @@ Democracy is built upon the representation of constituents. Unfortunately, legis
 
 We mobilize students at colleges across the state to vote and advocate for policy change that young people care about. Currently, our members are advocating for Election Holidays at their universities, helping more of their peers make it to the polls. By mobilizing students, we are building a large coalition of young voters and advocates who are ready to put pressure on elected officials to prioritize youth-focused change.
 
+<div style="display:hidden">
 OR
 
 We are a group of young people who are tired of being ignored by politicians. Our founders, Sam Hiner and Mick Tobin, began their advocacy in high school, cold-calling legislators to grow support for pro-democracy legislation that addressed overlooked problems that could pave the way to major, anti-democratic power grabs. After seeing how their advocacy rarely translated into legislative action, especially compared to lobbyists and other powerful constituents, they started the NC Young People’s Alliance to build youth power in North Carolina.
 
 We mobilize students at colleges across the state to vote and advocate for policy change that young people care about. Currently, our members are advocating for Election Holidays at their universities, helping more of their peers make it to the polls. By mobilizing students, we are building a large coalition of young voters and advocates who are ready to put pressure on elected officials to prioritize youth-focused change.
+</div>
 
 ## Stay Up to Date
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 
-<form class="rendered-form">
+<form class="rendered-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/formResponse"  method="post" target="hidden_iframe" onsubmit="submitted=true;">
     <div class="row">
-        <div class="formbuilder-text form-group field-text-1657310892954 col-xs-12 col-md-5">
-            <label for="text-1657310892954" class="formbuilder-text-label">First Name
+        <div class="formbuilder-text form-group field-entry-273742155 col-xs-12 col-md-5">
+            <label for="entry-273742155" class="formbuilder-text-label">First Name
                 <span class="formbuilder-required">*</span></label>
-            <input type="text" class="form-control" name="text-1657310892954" access="false" id="text-1657310892954" required="required" aria-required="true">
+            <input type="text" class="form-control" name="entry.273742155" access="false" id="entry-273742155" required="required" aria-required="true">
         </div>
-        <div class="formbuilder-text form-group field-text-1657310952708 col-xs-12 col-md-5 col-md-offset-2">
-            <label for="text-1657310952708" class="formbuilder-text-label">Last Name
+        <div class="formbuilder-text form-group field-entry-439177223 col-xs-12 col-md-5 col-md-offset-2">
+            <label for="entry-439177223" class="formbuilder-text-label">Last Name
                 <span class="formbuilder-required">*</span></label>
-            <input type="text" class="form-control" name="text-1657310952708" access="false" id="text-1657310952708" required="required" aria-required="true">
+            <input type="text" class="form-control" name="entry.439177223" access="false" id="entry-439177223" required="required" aria-required="true">
         </div>
     </div>
-    <div class="formbuilder-text form-group field-text-1657311029150 col-xs-12">
-        <label for="text-1657311029150" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
-        <input type="text" class="form-control" name="text-1657311029150" access="false" id="text-1657311029150" required="required" aria-required="true">
+    <div class="formbuilder-text form-group field-entry-1357238476 col-xs-12">
+        <label for="entry-1357238476" class="formbuilder-text-label">Email<span class="formbuilder-required">*</span></label>
+        <input type="text" class="form-control" name="entry.1357238476" access="false" id="entry-1357238476" required="required" aria-required="true">
     </div>
-    <div class="formbuilder-text form-group field-text-1657310990549 col-xs-12">
-        <label for="text-1657310990549" class="formbuilder-text-label">Phone Number
+    <div class="formbuilder-text form-group field-entry-1357718099 col-xs-12">
+        <label for="entry-1357718099" class="formbuilder-text-label">Phone Number
         </label>
-        <input type="text" class="form-control" name="text-1657310990549" access="false" id="text-1657310990549">
+        <input type="text" class="form-control" name="entry.1357718099" access="false" id="entry-1357718099">
     </div>
     <div class="formbuilder-button form-group field-button-1657311047983">
         <div class="wrapper">
