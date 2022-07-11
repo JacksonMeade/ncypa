@@ -1,7 +1,7 @@
 const search_header = document.getElementById('search-header');
 const search_inputs = [];
 for (var i = 2; i > 0; i--) search_inputs.push(document.getElementById(`search-${i}`));
-const clear_btns = [ document.getElementById('clear-btn') ];
+//const clear_btns = [ document.getElementById('clear-btn') ];
 
 let counts = {};
 
@@ -23,16 +23,14 @@ search_inputs.forEach((input) => {
         let test = search_header.classList.contains('full-height');
         if (count == 0 && !test) {
             search_header.classList.add('full-height');
-            clear_btns.forEach((btn) => {
+/*             clear_btns.forEach((btn) => {
                 btn.classList.add('hidden');
-            }
-            );
+            }); */
         } else if (count > 0 && test) {
             search_header.classList.remove('full-height');
-            clear_btns.forEach((btn) => {
+/*             clear_btns.forEach((btn) => {
                 btn.classList.remove('hidden');
-            }
-            );
+            }); */
         }
     })
 });
