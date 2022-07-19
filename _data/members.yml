@@ -1,26 +1,14 @@
-- name: Chloe Decker
-  position: Communications Director
-  school: Duke University
-  year: Sophomore
-  hometown: Murphy, N.C.
-
-- name: Leah Kann
-  position: Field Operations Director
-  school: UNC Chapel Hill
-  year: Sophomore
-  hometown: Washington, D.C.
-
 - name: Sam Hiner
   position: Executive Director
   school: UNC Chapel Hill
   year: Sophomore
   hometown: Mooresville, N.C.
-
-- name: Cora Martin
-  position: Community Director
-  school: UNC Chapel Hill
-  year: Senior
-  hometown: Durham, N.C.
+  
+- name: Mick Tobin
+  position: Operations Director
+  school: Duke University
+  year: Sophomore
+  hometown: Mooresville, N.C.
 
 - name: Alexandre Dray
   position: Field Operations Director
@@ -28,11 +16,23 @@
   year: Sophomore
   hometown: Miami, Fl.
 
-- name: Mick Tobin
-  position: Operations Director
-  school: Duke University
+- name: Leah Kann
+  position: Field Operations Director
+  school: UNC Chapel Hill
   year: Sophomore
-  hometown: Mooresville, N.C.
+  hometown: Washington, D.C.
+
+- name: Cora Martin
+  position: Community Director
+  school: UNC Chapel Hill
+  year: Senior
+  hometown: Durham, N.C.
+
+- name: Elijah King
+  position: Fundraising Director
+  school: UNC Greensboro
+  year: Junior
+  hometown: Durham, N.C.
 
 - name: Tyler Smith
   position: Communications Director
@@ -40,8 +40,26 @@
   year: Junior
   hometown: Wilmington, N.C.
 
+- name: Chloe Decker
+  position: Communications Director
+  school: Duke University
+  year: Sophomore
+  hometown: Murphy, N.C.
+
 - name: Jackson Meade
   position: Webmaster
   school: UNC Chapel Hill
+  year: Junior
+  hometown: Charlotte, N.C.
+  
+- name: Haleigh Eubanks
+  position: Senior Advisor
+  school: NC State University
+  year: Graduate Student
+  hometown: Charlotte, N.C.
+  
+- name: Rachel Palmroos
+  position: UNC Charlotte Field Director
+  school: UNC Charlotte
   year: Junior
   hometown: Charlotte, N.C.
