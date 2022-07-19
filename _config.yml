@@ -1,5 +1,5 @@
 baseurl: ...
-url: https://jacksonmeade.github.io/ncypa
+url: https://ncypa.github.io/ncypa
 
 permalink: /:category/:title:output_ext
 
