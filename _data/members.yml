@@ -22,18 +22,6 @@
   year: Sophomore
   hometown: Washington, D.C.
 
-- name: Cora Martin
-  position: Community Director
-  school: UNC Chapel Hill
-  year: Senior
-  hometown: Durham, N.C.
-
-- name: Elijah King
-  position: Fundraising Director
-  school: UNC Greensboro
-  year: Junior
-  hometown: Durham, N.C.
-
 - name: Tyler Smith
   position: Communications Director
   school: UNC Chapel Hill
@@ -46,6 +34,30 @@
   year: Sophomore
   hometown: Murphy, N.C.
 
+- name: Rachel Palmroos
+  position: UNC Charlotte Field Director
+  school: UNC Charlotte
+  year: Junior
+  hometown: Charlotte, N.C.
+
+- name: Kennedy Smith
+  position: ECU Field Director
+  school: East Carolina University
+  year: Junior
+  hometown: Raleigh, NC
+
+- name: Anu Mishra
+  position: NC State Field Director
+  school: NC State University
+  year: Junior
+  hometown: Cary, NC
+  
+- name: Jessie Gleason
+  position: Community Director
+  school: UNC Chapel Hill
+  year: Senior
+  hometown: Chapel Hill, NC
+
 - name: Jackson Meade
   position: Webmaster
   school: UNC Chapel Hill
@@ -53,13 +65,19 @@
   hometown: Charlotte, N.C.
   
 - name: Haleigh Eubanks
-  position: Senior Advisor
+  position: Senior Advisor for Communications
   school: NC State University
   year: Graduate Student
   hometown: Charlotte, N.C.
-  
-- name: Rachel Palmroos
-  position: UNC Charlotte Field Director
-  school: UNC Charlotte
+
+- name: Elijah King
+  position: Senior Advisor for Fundraising
+  school: UNC Greensboro
   year: Junior
-  hometown: Charlotte, N.C.
+  hometown: Durham, N.C.
+  
+- name: Cora Martin
+  position: Senior Advisor for Community
+  school: UNC Chapel Hill
+  year: Senior
+  hometown: Durham, N.C.
