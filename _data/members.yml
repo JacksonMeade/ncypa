@@ -22,18 +22,6 @@
   year: Sophomore
   hometown: Washington, D.C.
 
-- name: Tyler Smith
-  position: Communications Director
-  school: UNC Chapel Hill
-  year: Junior
-  hometown: Wilmington, N.C.
-
-- name: Chloe Decker
-  position: Communications Director
-  school: Duke University
-  year: Sophomore
-  hometown: Murphy, N.C.
-
 - name: Rachel Palmroos
   position: UNC Charlotte Field Director
   school: UNC Charlotte
@@ -51,11 +39,23 @@
   school: NC State University
   year: Junior
   hometown: Cary, NC
-  
-- name: Jessie Gleason
-  position: Community Director
+
+- name: Tyler Smith
+  position: Communications Director
   school: UNC Chapel Hill
-  year: Senior
+  year: Junior
+  hometown: Wilmington, N.C.
+
+- name: Chloe Decker
+  position: Communications Director
+  school: Duke University
+  year: Sophomore
+  hometown: Murphy, N.C.
+
+- name: Sananda Jagannathan
+  position: Partnerships/Fundraising Director
+  school: UNC Chapel Hill
+  year: Sophomore
   hometown: Chapel Hill, NC
 
 - name: Jackson Meade
