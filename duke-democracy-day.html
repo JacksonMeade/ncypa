@@ -14,7 +14,7 @@ md-header img: ''
         <h1>{{ day.date }}</h1>
         {% for event in day.events %}
         <div class="col-md-12 lg-6">
-            <h4 style="margin-bottom: 0 !important">{{ event.time }}</h4>
+            <h4 style="margin-bottom: 0 !important">{{ event.location }} @ {{ event.time }}</h4>
             <h3 style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.name }}</h3>
             <p style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.partner }}</p>
             <small style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.description }}</small>
