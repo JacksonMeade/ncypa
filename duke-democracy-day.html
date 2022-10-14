@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Team"
+title: "Duke Democracy Day"
 date: 2022-07-08 00:00:00 -0000
 category: [Information]
 permalink: duke-democracy-day
@@ -10,13 +10,17 @@ md-header img: ''
 
 <div class="row">
     {% for day in site.data.dukedates %}
-        <h3>{{ day.date }}</h3>
+    <div class="row">
+        <h4>{{ day.date }}</h4>
         {% for event in day.events %}
-            <h2>{{ event.time }}</h2>
-            <h1>{{ event.name }}</h1>
+        <div class="col-md-12 lg-6">
+            <h3>{{ event.time }}</h3>
+            <h2>{{ event.name }}</h2>
             <p>{{ event.partner }}</p>
             <small>{{ event.description }}</small>
             <small>{{ event.location }}</small>
+        </div>
         {% endfor %}
+    </div>
     {% endfor %}
 </div>
