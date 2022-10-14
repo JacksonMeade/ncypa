@@ -7,6 +7,17 @@ permalink: duke-democracy-day
 sm-header-img: ''
 md-header img: ''
 ---
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <span class="logo">NCYPA</span>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="/assets/img/dukevotes.png" class="col-12 img-responsive" alt="Duke Votes" />
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <img src="/assets/img/universitypartners.png" class="col-12 img-responsive" alt="University Partners" />
+    </div>
+</div>
 
 <div class="row">
     {% for day in site.data.dukedates %}
@@ -14,7 +25,7 @@ md-header img: ''
         <h1>{{ day.date }}</h1>
         {% for event in day.events %}
         <div class="col-md-12 lg-6">
-            <h4 style="margin-bottom: 0 !important">{{ event.location }} @ {{ event.time }}</h4>
+            <h4 style="margin-bottom: 0 !important">{{ event.location }}, {{ event.time }}</h4>
             <h3 style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.name }}</h3>
             <p style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.partner }}</p>
             <small style="margin-bottom: 0 !important; margin-top: 0 !important">{{ event.description }}</small>
