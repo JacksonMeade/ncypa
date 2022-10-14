@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Team"
+date: 2022-07-08 00:00:00 -0000
+category: [Information]
+permalink: team
+sm-header-img: ''
+md-header img: ''
+---
+
+<div class="row">
+    {% for day in site.data.dukedates %}
+        <h3>{{ day.date }}</h3>
+        {% for event in day.events %}
+            <h2>{{ event.time }}</h2>
+            <h1>{{ event.name }}</h1>
+            <p>{{ event.partner }}</p>
+            <small>{{ event.description }}</small>
+            <small>{{ event.location }}</small>
+        {% endfor %}
+    {% endfor %}
+</div>
