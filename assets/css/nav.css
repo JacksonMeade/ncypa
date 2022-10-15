@@ -141,7 +141,7 @@ background-color: white;
 .overlay ul li {
     display: block;
     height: 25%;
-    height: calc(100% / 4);
+    height: calc(100% / 5.2);
     min-height: 50px;
     position: relative;
     opacity: 0;
