@@ -18,6 +18,10 @@ We are mobilizing students at six NC universities to vote and advocate for youth
 
 Civic engagement is at the core of our operations. Each month, we host voter registration drives, local legislator speaker events, and watch parties at our seven schools. Through these events and education on our social media pages, we give young people the tools to act.
 
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/viewform?embedded=true" width="640" height="865" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<!--
 ## Stay Up to Date
 Sign up for our newsletter for updates on our work, petitions and protests you can support, and voting information.
 
@@ -51,4 +55,4 @@ Sign up for our newsletter for updates on our work, petitions and protests you c
 </form>
 
 <script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.url }}{{ page.url }}';}"></iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  {window.location='{{ site.url }}{{ page.url }}';}"></iframe>-->
