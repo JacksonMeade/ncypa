@@ -37,7 +37,7 @@ md-header img: ''
 <div class="row">
     {% for day in site.data.dukedates %}
     <div class="row">
-        <h2 class="text-blue" style="margin-bottom: 1rem !important">{{ day.date }}</h2>
+        <h2 class="text-blue" style="margin-bottom: 0.3rem !important">{{ day.date }}</h2>
         {% for event in day.events %}
         <div class="col-md-12 lg-6">
             <h4 style="margin-bottom: 0 !important">{{ event.location }}, {{ event.time }}</h4>
