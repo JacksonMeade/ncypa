@@ -2,6 +2,10 @@
  * @author Jackson Meade
  */
 
+ .text-blue {
+    color: rgb(15,86,151);
+ }
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
