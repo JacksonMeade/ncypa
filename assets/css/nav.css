@@ -44,7 +44,7 @@ background-color: white;
 
 .menu {
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
     position: absolute;
     top: 160px;
     left: 160px;
@@ -122,7 +122,7 @@ background-color: white;
     animation-delay: 0.5s;
 }
 .overlay nav {
-    font-size: 2.2em;
+    font-size: 3.2em;
     position: relative;
     height: 70%;
     top: 50%;
@@ -161,7 +161,7 @@ background-color: white;
 .overlay ul li a.logo {
     font-weight: 900;
     color: black;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
 }
 .overlay ul li a.logo::after {
     content: "North Carolina Young People's Alliance";
