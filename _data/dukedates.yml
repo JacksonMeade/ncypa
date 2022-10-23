@@ -7,6 +7,13 @@
       location: "Penn Pavillion"
 - date: Friday, October 28th
   events:
+    - time: "12:00 pm - 6:00 pm (every 30 minutes)"
+      name: "March to the Polls"
+      partner: "You Can Vote"
+      description: "The Democracy Day team will organize students in the BC Plaza and lead students to the Karsh Visitors Center to vote. Food Trucks & Water avaliable nearby the polling location with 2000 free icecream and tacos."
+      location: "Bryan Center Plaza to Karsh Visitor's Center"
+- date: Friday, October 28th
+  events:
     - time: "12:00 pm - 12:45 pm"
       name: "Pizza Event: Social Change Wheel Principles"
       partner: "Duke Office of DCA"
@@ -47,10 +54,3 @@
       partner: "Duke University Box Office"
       description: "Students will watch John Lewis: Good Trouble, an award-winning 2020 documentary that celebrates John Lewis's grassroots organizing. It traces his activism from key moments in the civil rights movement of the 1960s through his efforts today to preserve and protect Americans' ability to vote, which is increasingly in peril nationwide."
       location: "Bryan Center Griffith Theater"
-- date: Friday, October 28th
-  events:
-    - time: "12:00 pm - 6:00 pm (every 30 minutes)"
-      name: "March to the Polls"
-      partner: "You Can Vote"
-      description: "The Democracy Day team will organize students in the BC Plaza and lead students to the Karsh Visitors Center to vote. Food Trucks & Water avaliable nearby the polling location with 2000 free icecream and tacos."
-      location: "Bryan Center Plaza to Karsh Visitor's Center"
