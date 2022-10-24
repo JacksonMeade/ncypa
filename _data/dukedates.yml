@@ -4,8 +4,6 @@
       name: "March to the Polls"
       description: "Marches from the BC Plaza to Karsh Vistor's Center voting site every 30 minutes. 1000 free ice cream cones and tacos, t-shirts, and music will be provided!"
       location: "Bryan Center Plaza to Karsh Visitor's Center"
-- date: Friday, October 28th
-  events:
     - time: "12:00 pm - 12:45 pm"
       name: "Pizza Event: Beyond Voting Civic Engagement Year-Round"
       partner: "Duke Office of DCA"
@@ -18,7 +16,7 @@
       location: "Durham School of Arts"
     - time: "12:00 pm - 3:00 pm"
       name: "Rock the Polls"
-      partner: "Pitchforms (1:00 - 2:00), West Street Band (2:00 - 3:00), STR (3:00 - 4:00)"
+      partner: "Pitchforks (1:00 - 2:00), West Street Band (2:00 - 3:00), STR (3:00 - 4:00)"
       description: "3 bands will perform at the polls, rotating each hour. Free food from food trucks will be avaliable."
       location: "Karsh Visitor's Center"
     - time: "2:00 pm - 3:00 pm"
