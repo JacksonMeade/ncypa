@@ -1,20 +1,6 @@
-const header = document.querySelector("header");
-const hamburger = document.querySelector(".hamburger");
-
-window.onscroll = function() {
-  if (window.pageYOffset > 0) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-};
-
-hamburger.addEventListener("click", function() {
-  document.querySelector(".links").classList.toggle("show");
-});
 
 
-/*
+
 const menu = document.querySelector('#toggle');  
 const menuItems = document.querySelector('#overlay');  
 const menuContainer = document.querySelector('.menu-container');  
@@ -30,4 +16,21 @@ function toggleMenu(e) {
 }
 
 menu.addEventListener('click', toggleMenu, false);
+
+/*
+const header = document.querySelector("header");
+const hamburger = document.querySelector(".hamburger");
+
+window.onscroll = function() {
+  if (window.pageYOffset > 0) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+};
+
+hamburger.addEventListener("click", function() {
+  document.querySelector(".links").classList.toggle("show");
+});
+
 */
