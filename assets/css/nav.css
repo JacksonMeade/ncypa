@@ -1,62 +1,57 @@
-
-.navbar {
-    height: 80px;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: transparent;
-    border: none;
-    color: white;
-    z-index: 100;
-    transition: background-color 1s ease 0s;
+    transition: background-color 0.5s ease;
   }
   
-  .navbar-default .navbar-brand {
-    margin-top: 10px;
+  header.scrolled {
+    background-color: white;
+  }
+  
+  .brand {
+    font-size: 1.5em;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .links a {
+    margin-left: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
     color: black;
   }
-  .navbar-default .navbar-brand:hover {
-    color: #C57ED3;
-    border: 1px solid #C57ED3;
-  }
-  .navbar-default .navbar-nav > li > a {
-    color: white;
-    margin: 10px 5px 5px 5px;
-  }
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
-    color: #C57ED3;
-    border: 1px solid #C57ED3;
-  }
-  .navbar-default .navbar-nav > li > a:visited {
-    color: #C57ED3;
-    text-decoration: none;
-  }
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: transparent;
-    color: #C57ED3;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: #C57ED3;
-  }
-  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #490D40;
-  }
-  .navbar-default .navbar-toggle .icon-bar {
-    color: #C57ED3;
-    background-color: #C57ED3;
-  }
-  .navbar-default .navbar-collapse.collapse.in ul {
-    background-color: #490D40;
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
   }
   
-  /* Solid class attached on scroll past first section */
-  .navbar.solid {
-    background-color: #490D40;
-    transition: background-color 1s ease 0s;
-    box-shadow: 0 0 4px grey;
+  @media (max-width: 768px) {
+    .links {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+    }
   }
-  .navbar.solid .navbar-brand {
-    color: #C57ED3;
-    transition: color 1s ease 0s;
+  
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    margin: 5px;
+    background-color: black;
   }
-  .navbar.solid .navbar-nav > li > a {
-    color: #C57ED3;
-    transition: color 1s ease 0s;
-  }
+  

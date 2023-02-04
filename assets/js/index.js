@@ -1,13 +1,16 @@
-$(document).ready(function() {
-    // Transition effect for navbar 
-    $(window).scroll(function() {
-      // checks if window is scrolled more than 500px, adds/removes solid class
-      if($(this).scrollTop() > 500) { 
-          $('.navbar').addClass('solid');
-      } else {
-          $('.navbar').removeClass('solid');
-      }
-    });
+const header = document.querySelector("header");
+const hamburger = document.querySelector(".hamburger");
+
+window.onscroll = function() {
+  if (window.pageYOffset > 0) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+};
+
+hamburger.addEventListener("click", function() {
+  document.querySelector(".links").classList.toggle("show");
 });
 
 
