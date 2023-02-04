@@ -125,6 +125,11 @@ img {
     background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
 }
 
+html[data-version="EF"] .jumbotron, html[data-version="EF"] .minitron, html[data-version="EF"] .footer, html[data-version="EF"] .full-height {
+    background: rgb(15,86,151);
+    background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
+}
+
 .jumbotron h1, .minitron h1 {
     text-transform: uppercase;
 
