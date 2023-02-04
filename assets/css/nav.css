@@ -1,5 +1,5 @@
 header {
-    z-index:100;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@ header {
     margin-right: auto;
   }
   
-  .links {
+  nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -40,7 +40,7 @@ header {
   }
   
   @media (max-width: 768px) {
-    .links {
+    nav {
       display: none;
     }
   
