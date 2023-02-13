@@ -251,7 +251,7 @@ html[data-site="EF"] .mobile-nav.scrolled .menu-container:not(.full-menu) {
     header .brand, header .brand a {
         right: auto;
         left: 4rem;
-        top: 5.5rem;
+        top: 2.5rem;
     }
 
     header .brand a::before {
