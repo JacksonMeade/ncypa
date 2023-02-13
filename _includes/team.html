@@ -1,0 +1,15 @@
+<div class="row">
+    {% for member in site.data.members %}
+
+    
+    <div class="col-xs-12 col-sm-6 col-lg-4 team-member">
+        <div class="photo">
+            <img src="{{ site.url }}/assets/img/profiles/{{ member.name | remove:' ' }}.jpg" class="profile-img" alt="{{ member.name }}'s profile photo">
+        </div>
+        <h3 style="margin: 0">{{ member.name }}</h4>
+        <p style="margin: 0"><em>{{ member.position }}</em></p>
+        <small>{{ member.year }} at {{ member.school }} from {{ member.hometown }}</small>
+    </div>
+
+    {% endfor %}
+</div>
