@@ -125,7 +125,7 @@ img {
     background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
 }
 
-html[data-version="EF"] .jumbotron, html[data-version="EF"] .minitron, html[data-version="EF"] .footer, html[data-version="EF"] .full-height {
+html[data-site="EF"] .jumbotron, html[data-site="EF"] .minitron, html[data-site="EF"] .footer, html[data-site="EF"] .full-height {
     background: rgb(15,86,151);
     background: linear-gradient(180deg, rgba(15,86,151,1) 0%, rgba(19,93,166,1) 31%, rgba(8,45,123,1) 68%, rgba(3,23,60,1) 100%);
 }
@@ -282,14 +282,14 @@ html[data-version="EF"] .jumbotron, html[data-version="EF"] .minitron, html[data
         position: relative;
     }
 
-    .jumbotron h1::before {
+/*     html:not([data-site = "education-fund"]) .jumbotron h1::before {
         content: "NCYPA";
         position: absolute;
         font-size: 2rem;
         top: -2rem;
         left: 0;
         color: rgba(255, 255, 255, 0.185);
-    }
+    } */
 
     .jumbotron .feature {
         right: 0;
@@ -366,4 +366,18 @@ html[data-version="EF"] .jumbotron, html[data-version="EF"] .minitron, html[data
 
 .full-height {
     height: 100vh;
+}
+
+.home-banner {
+    min-height: 1rem;
+    background: rgba(3,23,60,1);
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0.25rem 0;
+}
+
+.home-banner a {
+    text-decoration: none;
+    color: red;
 }

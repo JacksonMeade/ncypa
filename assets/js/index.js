@@ -17,20 +17,16 @@ function toggleMenu(e) {
 
 menu.addEventListener('click', toggleMenu, false);
 
-/*
+
 const header = document.querySelector("header");
-const hamburger = document.querySelector(".hamburger");
+const mobile_nav = document.querySelector(".mobile-nav");
 
 window.onscroll = function() {
   if (window.pageYOffset > 0) {
     header.classList.add("scrolled");
+    mobile_nav.classList.add("scrolled");
   } else {
     header.classList.remove("scrolled");
+    mobile_nav.classList.remove("scrolled");
   }
 };
-
-hamburger.addEventListener("click", function() {
-  document.querySelector(".links").classList.toggle("show");
-});
-
-*/
