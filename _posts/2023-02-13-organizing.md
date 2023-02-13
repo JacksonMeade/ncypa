@@ -16,6 +16,7 @@ In the weeks leading up to the 2022 election, our student organizers canvassed t
 
 All of our participants are students, including 30 paid staff and 56 volunteers. Our organizing training helps students build advocacy and communication skills while reinforcing the importance of civic engagement and voting. Additionally, 42% of our paid staff have non-political majors, meaning that we are engaging students who were not already actively involved in politics.
 
+![Mobilizing Youth Voters](/assets/img/voter-mobilization.JPEG)
 
 ## Democracy Day
 
