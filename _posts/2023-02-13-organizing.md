@@ -23,3 +23,7 @@ All of our participants are students, including 30 paid staff and 56 volunteers.
 We advocate for our universities to add a no-class Democracy Day to their academic calendars during NC early voting. This day would increase student voting by giving students time to vote and serving as a symbol of the importance of democracy. Our research shows that universities with a day off during voting see 12% higher student voting (which means thousands more students voting).
 
 As part of our advocacy, we host Democracy Day programming to build on the impact of a no-class Democracy Day. At Duke, we hosted our inaugural Democracy Day program in 2022. We engaged the entire Duke community in this effort, from local politicians to music groups, and as a result saw a large spike in voting on Democracy Day, with over 350 more students voting.
+
+![A graph showing the effect of Democracy Day on Durham voter turnout](/assets/img/democracy-day-graph.png)
+
+![YPA advocates make posters for Democracy Day](/assets/img/democracy-day-signage.JPG)
