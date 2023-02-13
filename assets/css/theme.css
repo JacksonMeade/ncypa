@@ -17,6 +17,10 @@ body {
     position: relative;
 }
 
+a {
+    color: inherit;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
