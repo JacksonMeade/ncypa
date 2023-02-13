@@ -21,6 +21,10 @@ a {
     color: inherit;
 }
 
+img {
+    width: 100%;
+}
+
 h1 {
     text-transform: uppercase;
     font-size: 3.5rem;
