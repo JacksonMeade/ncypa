@@ -1,10 +1,33 @@
---
-layout: post
+---
+layout: default
 ---
 
-{{ content }}
+<section class="p-main-1">
+    <div class="row minitron">
+        <div class="col-xs-8 col-xs-offset-4 col-sm-offset-0">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <div class="feature">
+            <img src="{{ sm-header-img }}" class="hide-xs show-sm">
+            <img src="{{ md-header-img }}" class="hide-sm">
+        </div>
+        <img src="assets/img/svg/jumbotron-bottom-md.svg" class="border hide-xs show-sm" style="height: 10%"/>
+        <img src="assets/img/svg/jumbotron-bottom-sm.svg" class="border hide-sm" />
+        
+    </div>
+</section>
 
-{% include team.html %}
+<main class="post-layout row">
+    <section class="post-content col-xs-12 col-md-8 col-lg-7">
+        {{ content }}
+
+        {% include team.html %}
 
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/viewform?embedded=true" width="100%" height="962px" style="min-height:962px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/viewform?embedded=true" width="100%" height="962px" style="min-height:962px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+    </section>
+    <section class="post-content sidebar col-xs-12 col-md-4 col-lg-5">
+        {% include sidebar.html %}
+    </section>
+</main>
