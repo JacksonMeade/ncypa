@@ -36,6 +36,7 @@ header {
   header .links {
     margin-top: 2.5rem;
     transition: margin-top 0.2s ease;
+    flex-shrink: 0;
   }
 
   header .links a {
@@ -169,7 +170,7 @@ header {
     transform: skew(-20deg);
   }
 
-  @media screen and (max-width: 798px) {
+  @media screen and (max-width: 950px) {
         .links {
             display: none;
         }
@@ -243,7 +244,7 @@ html[data-site="EF"] .mobile-nav.scrolled .menu-container:not(.full-menu) {
     right: 1rem;
 }
 
-@media only screen and (min-width: 798px) {
+@media only screen and (min-width: 950px) {
     .mobile-nav {
         display: none;
     }
