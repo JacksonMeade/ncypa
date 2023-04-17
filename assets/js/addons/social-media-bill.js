@@ -1,4 +1,5 @@
 const LAST_SLIDE = 3;
+const APP_URL = 'https://script.google.com/macros/s/AKfycbxphsjPikH1FECQTENldlaoObGeJJIKXHAs0Zp7A8mTx2ZKzafRFr4iYSSlN8_WdN1Nww/exec';
 let currentSlide = 0;
 
 function updateFormData() {
@@ -18,22 +19,26 @@ function updateFormData() {
     currentSlide++;
 
     if (currentSlide === LAST_SLIDE) {
-        getRepresentatives(address);
+        let formData = {
+            name: name,
+            email: email,
+            phone: phone,
+            isJoiningMailList: isJoiningMailList
+        }
 
-        // silently post to mailing list
-        $.ajax({
-            type: "POST",
-            url: "https://script.google.com/macros/s/AKfycbxphsjPikH1FECQTENldlaoObGeJJIKXHAs0Zp7A8mTx2ZKzafRFr4iYSSlN8_WdN1Nww/exec",
-            data: JSON.stringify({
-                name,
-                email,
-                phone,
-                isJoiningMailList
-            }),
-            success: function() {
-                console.log('Submitted user data to mailing list');
-            }
+        fetch(APP_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        }).then(response => {
+            console.log(response);
+        }).catch(error => {
+            console.log(error);
         });
+
+        getRepresentatives(address);
     }
   }
 
