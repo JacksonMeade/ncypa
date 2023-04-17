@@ -97,7 +97,7 @@ function updateFormData() {
     return container;
   }
   
-  function createRepresentativeProfile(data) {
+  function createRepresentativeProfile(data, office) {
     const container = document.createElement('div');
     container.classList.add('profile-container');
   
@@ -110,6 +110,11 @@ function updateFormData() {
     const officerName = document.createElement('h2');
     officerName.textContent = data.name;
     container.appendChild(officerName);
+
+    // Create officer office
+    const officerOffice = document.createElement('h3');
+    officerOffice.textContent = office;
+    container.appendChild(officerOffice);
   
     // Create officer title
     const officerTitle = document.createElement('h4');
