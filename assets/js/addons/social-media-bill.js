@@ -59,6 +59,8 @@ function updateFormData() {
   
     // immediately invoke an async function expression
     (async (a_address) => {
+        await waitforme(1276);
+
       try {
         const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg`);
         const data = await response.json();
@@ -155,3 +157,8 @@ function updateFormData() {
   
   
   
+  function waitforme(millisec) {
+    return new Promise(resolve => {
+        setTimeout(() => { resolve('') }, millisec);
+    })
+}
