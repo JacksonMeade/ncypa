@@ -1,8 +1,10 @@
 /* Form style */
+.post-content {
+  min-height: 80vh;
+}
 
 #multistepsform {
   width: 400px;
-  height: 80vh;
   margin: 50px auto;
   text-align: center;
   position: relative;
