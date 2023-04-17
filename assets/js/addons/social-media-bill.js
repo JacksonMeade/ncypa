@@ -127,7 +127,7 @@ function updateFormData() {
       button.classList.add('social-button');
       button.innerHTML = `
         <a target="_blank" href="${url}" class="no-interaction">
-          <img src="${site.url}/assets/img/svg/link.svg" class="social-icon">
+          <img src="./assets/img/svg/link.svg" class="social-icon">
         </a>
       `;
       links.appendChild(button);
@@ -139,7 +139,7 @@ function updateFormData() {
       button.classList.add('social-button');
       button.innerHTML = `
         <a target="_blank" href="https://${channel.type.toLowerCase()}.com/${channel.id}" class="no-interaction">
-          <img src="${site.url}/assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
+          <img src="./assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
         </a>
       `;
       links.appendChild(button);
