@@ -1,5 +1,5 @@
 const LAST_SLIDE = 3;
-const APP_URL = 'https://script.google.com/macros/s/AKfycbz1inqL6D-naJnpGrFAH8EoP8KfvSI941Wwzk7uhwopRNwqofGykxgBUlXES8jWfldT/exec';
+const APP_URL = 'https://script.google.com/macros/s/AKfycby5YJqr8SR9QpkZo0qdyckWYJc-287FbP-oCSaR_Cj5vL3UPuyzcLWgnDUZ-LbcH2-M0g/exec';
 let currentSlide = 0;
 
 function updateFormData() {
