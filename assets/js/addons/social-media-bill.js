@@ -6,18 +6,13 @@ function updateFormData() {
     const name = $('input[name="name"]').val();
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
-    const streetNumber = $('input[name="number"]').val();
-    const streetName = $('input[name="streetName"]').val();
-    const city = $('input[name="city"]').val();
-    const state = $('input[name="state"]').val();
-    const zip = $('input[name="zip"]').val();
-    
-    const address = `${streetNumber} ${streetName}, ${city}, ${state} ${zip}`;
+    const address = $('input[name="address"]').val();
   
     // Update the text and textarea fields in the third fieldset with street number, street name, city, state, and zip
     $('p[name="name"]').text(name);
     $('p[name="email"]').text(email);
     $('p[name="phone"]').text(phone);
+    $('p[name="address"]').text(address);
     
     currentSlide++;
 
