@@ -79,7 +79,7 @@ function updateFormData() {
       } catch (error) {
         console.error(error);
         // replace loading div with error message
-        $('#loading').replaceWith(`<div data-process="true">${error}. This is a malfunction. Please contact site administrator. </div>`); 
+        $('#loading').replaceWith(`<div data-process="true">${error.message}</div>`); 
       }
     })(m_address);
   }
