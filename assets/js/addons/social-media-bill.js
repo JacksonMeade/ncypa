@@ -128,7 +128,7 @@ function updateFormData() {
   
     // Create officer name
     const officerName = document.createElement('h2');
-    officerName.textContent = data.name;
+    officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
     container.appendChild(officerName);
 
     // Create officer office
@@ -136,11 +136,6 @@ function updateFormData() {
     officerOffice.textContent = office;
     container.appendChild(officerOffice);
   
-    // Create officer title
-    const officerTitle = document.createElement('h4');
-    officerTitle.classList.add('italic');
-    officerTitle.textContent = data.party;
-    container.appendChild(officerTitle);
   
     // Create links section
     const links = document.createElement('div');

@@ -63,9 +63,8 @@
   color: #fff;
 }
 #multistepsform .fs-title {
-  font-size: 15px;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  color: #2c3e50;
   margin-bottom: 10px;
 }
 #multistepsform .fs-subtitle {
@@ -144,4 +143,17 @@
 }
 @-webkit-keyframes spin {
   to { -webkit-transform: rotate(360deg); }
+}
+
+.profile-container h2 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.profile-container h3 {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
