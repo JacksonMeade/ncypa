@@ -60,16 +60,22 @@ function updateFormData() {
   
     // replace process div with loading div
     processDiv.replaceWith('<div data-process="true" id="loading"></div>');
-    
+
   
     // immediately invoke an async function expression
     (async (a_address) => {
       try {
         const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg&address=${a_address}`);
         const data = await response.json();
+        console.log(data);
+
+        if (data.error) {
+          throw data.error;
+        }
         
-        
-        $('#loading').replaceWith('<div data-process="true">Got it!</div>');
+        // replace loading div with success message
+        $('#loading').replaceWith(`<div data-process="true">${JSON.stringify(data)}</div>`);
+
       } catch (error) {
         console.error(error);
         // replace loading div with error message
