@@ -97,7 +97,7 @@ function updateFormData() {
     return container;
   }
   
-  function createRepresentativeProfile(data, office) {
+  function createRepresentativeProfile(data) {
     const container = document.createElement('div');
     container.classList.add('profile-container');
   
@@ -114,30 +114,39 @@ function updateFormData() {
     // Create officer title
     const officerTitle = document.createElement('h4');
     officerTitle.classList.add('italic');
-    officerTitle.textContent = office;
+    officerTitle.textContent = data.party;
     container.appendChild(officerTitle);
   
     // Create links section
     const links = document.createElement('div');
     container.appendChild(links);
   
-    // Add links for each URL in the data
+    // Add buttons for each URL in the data
     data.urls.forEach(url => {
-      const link = document.createElement('a');
-      link.href = url;
-      link.textContent = url;
-      links.appendChild(link);
+      const button = document.createElement('button');
+      button.classList.add('social-button');
+      button.innerHTML = `
+        <a target="_blank" href="${url}" class="no-interaction">
+          <img src="${site.url}/assets/img/svg/link.svg" class="social-icon">
+        </a>
+      `;
+      links.appendChild(button);
     });
   
-    // Add links for each channel in the data
+    // Add buttons for each channel in the data
     data.channels.forEach(channel => {
-      const link = document.createElement('a');
-      link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
-      link.textContent = `${channel.type}: ${channel.id}`;
-      links.appendChild(link);
+      const button = document.createElement('button');
+      button.classList.add('social-button');
+      button.innerHTML = `
+        <a target="_blank" href="https://${channel.type.toLowerCase()}.com/${channel.id}" class="no-interaction">
+          <img src="${site.url}/assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
+        </a>
+      `;
+      links.appendChild(button);
     });
   
     return container;
   }
+  
   
   
