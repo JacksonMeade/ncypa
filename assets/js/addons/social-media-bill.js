@@ -20,9 +20,9 @@ function updateFormData() {
 
     if (currentSlide === LAST_SLIDE) {
         let formData = {
-            name: name,
-            email: email,
-            phone: phone
+            Name: name,
+            Email: email,
+            Phone: phone
         };
 
         (isJoiningMailList) && (async (a_formData) => {
@@ -78,7 +78,7 @@ function updateFormData() {
     processDiv.replaceWith('<div data-process="true" id="loading"></div>');
 
   
-    // immediately invoke an async function expression
+    // immediately invoke async function to fetch data
     (async (a_address) => {
         await waitforme(1276);
 
