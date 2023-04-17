@@ -7,6 +7,7 @@ function updateFormData() {
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
     const address = $('input[name="address"]').val();
+    const isJoiningMailList = $('input[name="mailing-list"]').is(':checked');
   
     // Update the text and textarea fields in the third fieldset with street number, street name, city, state, and zip
     $('p[name="name"]').text(name);
@@ -18,6 +19,21 @@ function updateFormData() {
 
     if (currentSlide === LAST_SLIDE) {
         getRepresentatives(address);
+
+        // silently post to mailing list
+        $.ajax({
+            type: "POST",
+            url: "https://script.google.com/macros/s/AKfycbxphsjPikH1FECQTENldlaoObGeJJIKXHAs0Zp7A8mTx2ZKzafRFr4iYSSlN8_WdN1Nww/exec",
+            data: JSON.stringify({
+                name,
+                email,
+                phone,
+                isJoiningMailList
+            }),
+            success: function() {
+                console.log('Submitted user data to mailing list');
+            }
+        });
     }
   }
 
@@ -79,9 +95,8 @@ function updateFormData() {
         });
 
       } catch (error) {
-        console.error(error);
         // replace loading div with error message
-        $('#loading').replaceWith(`<div data-process="true">${error.message}</div>`); 
+        $('#loading').replaceWith(`<div data-process="true" style="color: red">${error.message.toLowerCase()}</div>`); 
       }
     })(m_address);
   }
