@@ -78,7 +78,7 @@ function updateFormData() {
 
         $('div[data-process="true"]').append(`<h2>Here are your representatives:</h2>`);
         data.offices.forEach(office => {
-            const representatives = getRepresentativesByOffice(office);
+            const representatives = getRepresentativesByOffice(data, office);
             $('div[data-process="true"]').append(representatives);
         });
 
@@ -90,13 +90,13 @@ function updateFormData() {
     })(m_address);
   }
 
-  function getRepresentativesByOffice(office_data) {
+  function getRepresentativesByOffice(data, office) {
     const container = document.createElement('div');
     container.classList.add('representatives-container');
   
-    office_data.officialIndices.forEach(index => {
-      const representative = office_data.officials[index];
-      const profile = createRepresentativeProfile(representative, office_data.name);
+    office.officialIndices.forEach(index => {
+      const representative = data.officials[index];
+      const profile = createRepresentativeProfile(representative, office.name);
       container.appendChild(profile);
     });
   
