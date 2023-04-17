@@ -3,8 +3,8 @@ function updateFormData() {
     const name = $('input[name="name"]').val();
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
-    const streetNumber = $('input[name="street-number"]').val();
-    const streetName = $('input[name="street-name"]').val();
+    const streetNumber = $('input[name="number"]').val();
+    const streetName = $('input[name="streetName"]').val();
     const city = $('input[name="city"]').val();
     const state = $('input[name="state"]').val();
     const zip = $('input[name="zip"]').val();
@@ -49,7 +49,7 @@ function updateFormData() {
     // immediately invoke an async function expression
     (async (a_address) => {
       try {
-        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}`);
+        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=&address=${a_address}`);
         const data = await response.json();
         
         
