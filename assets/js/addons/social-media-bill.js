@@ -24,7 +24,7 @@ function updateFormData() {
             email: email,
             phone: phone,
             isJoiningMailList: isJoiningMailList
-        }
+        };
 
         (async (a_formData) => {
             try {
