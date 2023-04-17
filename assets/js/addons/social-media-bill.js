@@ -28,7 +28,10 @@ function updateFormData() {
             try {
                 const response = await fetch(APP_URL, { 
                     method: 'POST',
-                    body: JSON.stringify(a_formData)
+                    body: a_formData,
+                    headers: {
+                        'Content-Type': 'text/plain;charset=utf-8',
+                    },
                 });
                 const data = await response.json();
                 console.log(data);
