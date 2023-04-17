@@ -65,7 +65,7 @@ function updateFormData() {
     // immediately invoke an async function expression
     (async (a_address) => {
       try {
-        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg&address=${a_address}`);
+        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg`);
         const data = await response.json();
         console.log(data);
 
