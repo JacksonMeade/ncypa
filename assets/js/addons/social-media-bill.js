@@ -1,3 +1,6 @@
+const LAST_SLIDE = 3;
+let currentSlide = 0;
+
 function updateFormData() {
     // Get the input values from the first three fieldsets
     const name = $('input[name="name"]').val();
@@ -16,14 +19,26 @@ function updateFormData() {
     $('p[name="email"]').text(email);
     $('p[name="phone"]').text(phone);
     
+    currentSlide++;
 
-    getRepresentatives(address);
+    if (currentSlide === LAST_SLIDE) {
+        getRepresentatives(address);
+    }
+  }
+
+  function decrement() {
+    currentSlide--;
   }
   
   const nextButton = $('input[name="next"]');
   nextButton.each(function() {
     $(this).on('click', updateFormData);
   });
+
+  const prevButton = $('input[name="prev"]');
+    prevButton.each(function() {
+        $(this).on('click', decrement);
+    });
   
   function getIsInputValid(type, value) {
     switch(type) {
@@ -49,7 +64,7 @@ function updateFormData() {
     // immediately invoke an async function expression
     (async (a_address) => {
       try {
-        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=&address=${a_address}`);
+        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg&address=${a_address}`);
         const data = await response.json();
         
         
@@ -62,17 +77,4 @@ function updateFormData() {
     })(m_address);
   }
   
-  
-  function getCustomData() {
-    const processDiv = $('div[data-process="true"]');
-  
-    // just get the address
-    const address = $('p[name="address"]').text();
-  
-    (async () => {
-      const response = await fetch('https://api.postcodes.io/postcodes/' + address);
-      const data = await response.json();
-      console.log(data);
-    })();
-  }
   
