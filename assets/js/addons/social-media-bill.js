@@ -1,5 +1,5 @@
 const LAST_SLIDE = 3;
-const APP_URL = 'https://script.google.com/macros/s/AKfycby5YJqr8SR9QpkZo0qdyckWYJc-287FbP-oCSaR_Cj5vL3UPuyzcLWgnDUZ-LbcH2-M0g/exec';
+const APP_URL = 'https://script.google.com/macros/s/AKfycbzmm99A2hwSprth15KNyhLaHXtXLsDRNzlCXvl6M1DgxfIU5AV7KNqDfDQ2_WNCiId-hQ/exec';
 let currentSlide = 0;
 
 function updateFormData() {
@@ -28,10 +28,7 @@ function updateFormData() {
             try {
                 const response = await fetch(APP_URL, { 
                     method: 'POST',
-                    body: a_formData,
-                    headers: {
-                        'Content-Type': 'text/plain;charset=utf-8',
-                    },
+                    body: JSON.stringify(Object.fromEntries(a_formData))
                 });
                 const data = await response.json();
                 console.log(data);
