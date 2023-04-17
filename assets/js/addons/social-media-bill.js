@@ -76,7 +76,6 @@ function updateFormData() {
         // replace loading div with success message
         $('#loading').replaceWith(`<div data-process="true"></div>`);
 
-        $('div[data-process="true"]').append(`<h2>Here are your representatives:</h2>`);
         data.offices.forEach(office => {
             const representatives = getRepresentativesByOffice(data, office);
             $('div[data-process="true"]').append(representatives);
