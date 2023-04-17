@@ -1,5 +1,5 @@
 const LAST_SLIDE = 3;
-const APP_URL = 'https://script.google.com/macros/s/AKfycbxphsjPikH1FECQTENldlaoObGeJJIKXHAs0Zp7A8mTx2ZKzafRFr4iYSSlN8_WdN1Nww/exec';
+const APP_URL = 'https://script.google.com/macros/s/AKfycbw7WYgebHKhQQUeIQ_jiPzzFWKbNO2v9aZwXLx2hPBOYeZOm4Znl2dZNm4_2EOglqEA2w/exec';
 let currentSlide = 0;
 
 function updateFormData() {
@@ -87,8 +87,7 @@ function updateFormData() {
 
       try {
         const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg`);
-        const data = await response.json();
-        console.log(data);
+        const data = await response.json(); 
 
         if (data.error) {
           throw data.error;
