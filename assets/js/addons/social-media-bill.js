@@ -19,11 +19,10 @@ function updateFormData() {
     currentSlide++;
 
     if (currentSlide === LAST_SLIDE) {
-        let formData = {
-            Name: name,
-            Email: email,
-            Phone: phone
-        };
+        let formData = new FormData();
+        formData.append('Name', name);
+        formData.append('Email', email);
+        formData.append('Phone', phone);
 
         (isJoiningMailList) && (async (a_formData) => {
             try {
