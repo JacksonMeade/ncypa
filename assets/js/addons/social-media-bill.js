@@ -74,7 +74,13 @@ function updateFormData() {
         }
         
         // replace loading div with success message
-        $('#loading').replaceWith(`<div data-process="true">${JSON.stringify(data)}</div>`);
+        $('#loading').replaceWith(`<div data-process="true"></div>`);
+
+        $('div[data-process="true"]').append(`<h2>Here are your representatives:</h2>`);
+        data.offices.forEach(office => {
+            const representatives = getRepresentativesByOffice(office);
+            $('div[data-process="true"]').append(representatives);
+        });
 
       } catch (error) {
         console.error(error);
@@ -82,6 +88,62 @@ function updateFormData() {
         $('#loading').replaceWith(`<div data-process="true">${error}. This is a malfunction. Please contact site administrator. </div>`); 
       }
     })(m_address);
+  }
+
+  function getRepresentativesByOffice(office_data) {
+    const container = document.createElement('div');
+    container.classList.add('representatives-container');
+  
+    office_data.officialIndices.forEach(index => {
+      const representative = office_data.officials[index];
+      const profile = createRepresentativeProfile(representative, office_data.name);
+      container.appendChild(profile);
+    });
+  
+    return container;
+  }
+  
+  function createRepresentativeProfile(data, office) {
+    const container = document.createElement('div');
+    container.classList.add('profile-container');
+  
+    // Create profile picture
+    const profilePicture = document.createElement('div');
+    profilePicture.classList.add('profile-picture');
+    container.appendChild(profilePicture);
+  
+    // Create officer name
+    const officerName = document.createElement('h2');
+    officerName.textContent = data.name;
+    container.appendChild(officerName);
+  
+    // Create officer title
+    const officerTitle = document.createElement('h4');
+    officerTitle.classList.add('italic');
+    officerTitle.textContent = office;
+    container.appendChild(officerTitle);
+  
+    // Create links section
+    const links = document.createElement('div');
+    container.appendChild(links);
+  
+    // Add links for each URL in the data
+    data.urls.forEach(url => {
+      const link = document.createElement('a');
+      link.href = url;
+      link.textContent = url;
+      links.appendChild(link);
+    });
+  
+    // Add links for each channel in the data
+    data.channels.forEach(channel => {
+      const link = document.createElement('a');
+      link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
+      link.textContent = `${channel.type}: ${channel.id}`;
+      links.appendChild(link);
+    });
+  
+    return container;
   }
   
   
