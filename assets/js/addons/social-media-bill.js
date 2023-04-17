@@ -60,6 +60,7 @@ function updateFormData() {
   
     // replace process div with loading div
     processDiv.replaceWith('<div data-process="true" id="loading"></div>');
+    
   
     // immediately invoke an async function expression
     (async (a_address) => {
