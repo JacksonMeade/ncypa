@@ -30,7 +30,10 @@ function updateFormData() {
             try {
                 const response = await fetch(APP_URL, {
                     method: 'POST',
-                    data: a_formData
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(a_formData)
                 });
                 const data = await response.json();
                 console.log(data);
