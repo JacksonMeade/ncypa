@@ -22,13 +22,12 @@ function updateFormData() {
         let formData = {
             name: name,
             email: email,
-            phone: phone,
-            isJoiningMailList: isJoiningMailList
+            phone: phone
         };
 
-        (async (a_formData) => {
+        (isJoiningMailList) && (async (a_formData) => {
             try {
-                const response = await fetch(APP_URL, {
+                const response = await fetch(APP_URL, { 
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
