@@ -1,0 +1,141 @@
+/* Form style */
+
+#multistepsform {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+#multistepsform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 10%;
+  position: relative;
+}
+#multistepsform fieldset:not(:first-of-type) {
+  display: none;
+}
+#multistepsform input,
+#multistepsform textarea {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2c3e50;
+  font-size: 13px;
+}
+#multistepsform input:focus,
+#multistepsform textarea:focus {
+  border-color: black;
+  outline: none;
+  color: #637373;
+}
+#multistepsform .action-button {
+  width: 100px;
+  background: rgb(191,5,9);
+  background: -moz-linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  background: -webkit-linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  background: linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bf0509",endColorstr="#1b5ba4",GradientType=1); 
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+#multistepsform .action-button:hover,
+#multistepsform .action-button:focus {
+  color: #fff;
+}
+#multistepsform .fs-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+#multistepsform .fs-subtitle {
+  font-weight: normal;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 20px;
+}
+#multistepsform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  counter-reset: step;
+}
+#multistepsform #progressbar li {
+  list-style-type: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 9px;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+#multistepsform #progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 20px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #fff;
+  background: black;
+  border-radius: 1rem;
+  margin: 0 auto 5px auto;
+}
+#multistepsform #progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: -50%;
+  top: 9px;
+  z-index: -1;
+}
+#multistepsform #progressbar li:first-child:after {
+  content: none;
+}
+#multistepsform #progressbar li.active {
+  color: rgb(191,5,9);
+}
+#multistepsform #progressbar li.active:before, #multistepsform #progressbar li.active:after {
+  background: rgb(191,5,9);
+  background: -moz-linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  background: -webkit-linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  background: linear-gradient(326deg, rgba(191,5,9,1) 0%, rgba(27,91,164,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bf0509",endColorstr="#1b5ba4",GradientType=1);   
+  color: white;
+}
+
+/* Loader */
+
+
+#loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: black;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
