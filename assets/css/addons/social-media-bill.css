@@ -55,6 +55,9 @@
   padding: 10px 5px;
   margin: 10px 5px;
 }
+.previous.action-button {
+  background: black;
+}
 #multistepsform .action-button:hover,
 #multistepsform .action-button:focus {
   color: #fff;
