@@ -26,17 +26,18 @@ function updateFormData() {
             isJoiningMailList: isJoiningMailList
         }
 
-        fetch(APP_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        }).then(response => {
-            console.log(response);
-        }).catch(error => {
-            console.log(error);
-        });
+        (async (a_formData) => {
+            try {
+                const response = await fetch(APP_URL, {
+                    method: 'POST',
+                    data: a_formData
+                });
+                const data = await response.json();
+                console.log(data);
+            } catch (error) {
+                console.log(error);
+            }
+        })(formData);
 
         getRepresentatives(address);
     }
