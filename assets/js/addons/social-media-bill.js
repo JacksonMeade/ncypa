@@ -150,7 +150,8 @@ function updateFormData() {
   
     // Create links section
     const links = document.createElement('div');
-    info.appendChild(links);
+    links.classList.add('social-links-container');
+    container.appendChild(links);
   
 /*     // Add buttons for each URL in the data
     data.urls.forEach(url => {
@@ -167,26 +168,28 @@ function updateFormData() {
 
 
     data.phones.forEach(phone => {
-        const button = document.createElement('button');
-        button.classList.add('social-button');
-        button.innerHTML = `
-            <a target="_blank" href="tel:${phone}" class="no-interaction">
-                <img src="./assets/img/svg/phone.svg" class="social-icon">
-            </a>
-        `;
-        links.appendChild(button);
+      const link = document.createElement('a');
+      link.classList.add('no-interaction');
+      link.classList.add('social-icon');
+      link.target = '_blank';
+      link.href = `tel:${phone}`;
+      link.innerHTML = `
+        <img src="./assets/img/svg/phone.svg" class="social-icon">
+      `;
+      links.appendChild(link);
     });
 
     // Add buttons for each channel in the data
     data.channels.forEach(channel => {
-      const button = document.createElement('button');
-      button.classList.add('social-button');
-      button.innerHTML = `
-        <a target="_blank" href="https://${channel.type.toLowerCase()}.com/${channel.id}" class="no-interaction">
-          <img src="./assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
-        </a>
+      const link = document.createElement('a');
+      link.classList.add('no-interaction');
+      link.classList.add('social-icon');
+      link.target = '_blank';
+      link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
+      link.innerHTML = `
+        <img src="./assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
       `;
-      links.appendChild(button);
+      links.appendChild(link);
     });
 
     (hasPhoto) && container.appendChild(picture);
