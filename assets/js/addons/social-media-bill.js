@@ -123,7 +123,7 @@ function updateFormData() {
     container.classList.add('row');
 
     const picture = document.createElement('div');
-    (data.photoUrl) ?? picture.classList.add('profile-picture-container');
+    picture.classList.add('profile-picture-container');
     const info = document.createElement('div');
     info.classList.add('profile-info-container');
   
@@ -174,7 +174,7 @@ function updateFormData() {
       links.appendChild(button);
     });
 
-    container.appendChild(picture);
+    (data.photoUrl) ?? container.appendChild(picture);
     container.appendChild(info);
   
     return container;
