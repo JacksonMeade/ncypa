@@ -63,3 +63,13 @@ js-addons:
       <input type="submit" name="submit" class="submit action-button" value="Submit" />
     </fieldset>-->
   </form>
+
+  <!-- Google Maps Autocomplete -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0n3TvlTQIAt1aW0fJawuWo8I7vfi2bbY&libraries=places&callback=initMap">
+  </script>
+  <script>
+    const input = document.querySelector('input[name="address"]');
+    const autocomplete = new google.maps.places.Autocomplete(input);
+  </script>
+
