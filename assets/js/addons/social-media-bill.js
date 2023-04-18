@@ -120,26 +120,30 @@ function updateFormData() {
   function createRepresentativeProfile(data, office) {
     const container = document.createElement('div');
     container.classList.add('profile-container');
+    container.classList.add('row');
+
+    const picture = document.createElement('div');
+    const info = document.createElement('div');
   
     // Create profile picture
     const profilePicture = document.createElement('div');
     profilePicture.classList.add('profile-picture');
-    container.appendChild(profilePicture);
+    picture.appendChild(profilePicture);
   
     // Create officer name
     const officerName = document.createElement('h2');
     officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
-    container.appendChild(officerName);
+    info.appendChild(officerName);
 
     // Create officer office
     const officerOffice = document.createElement('h3');
     officerOffice.textContent = office;
-    container.appendChild(officerOffice);
+    info.appendChild(officerOffice);
   
   
     // Create links section
     const links = document.createElement('div');
-    container.appendChild(links);
+    info.appendChild(links);
   
     // Add buttons for each URL in the data
     data.urls.forEach(url => {
@@ -164,6 +168,9 @@ function updateFormData() {
       `;
       links.appendChild(button);
     });
+
+    container.appendChild(picture);
+    container.appendChild(info);
   
     return container;
   }
