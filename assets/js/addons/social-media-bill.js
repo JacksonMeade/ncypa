@@ -123,7 +123,9 @@ function updateFormData() {
     container.classList.add('row');
 
     const picture = document.createElement('div');
+    picture.classList.add('profile-picture-container');
     const info = document.createElement('div');
+    info.classList.add('profile-info-container');
   
     // Create profile picture
     const profilePicture = document.createElement('div');
