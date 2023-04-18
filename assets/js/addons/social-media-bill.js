@@ -132,6 +132,7 @@ function updateFormData() {
         const profilePicture = document.createElement('img');
         profilePicture.classList.add('profile-picture');
         profilePicture.src = data.photoUrl;
+        picture.appendChild(profilePicture);
     })();
   
     // Create officer name
