@@ -9,9 +9,9 @@ const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxz
 let currentSlide = 0;
 
 var autocomplete = null;
-document.querySelector('#google-maps').addEventListener('load', function() {
-  let input = document.querySelector('input[name="address"]');
-  autocomplete = new google.maps.places.Autocomplete(input);
+$('#google-maps').on('load', function() {
+    let input = document.querySelector('input[name="address"]');
+    autocomplete = new google.maps.places.Autocomplete(input);
 });
 
 function updateFormData() {
