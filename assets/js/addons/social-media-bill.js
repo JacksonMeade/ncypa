@@ -22,7 +22,7 @@ function updateFormData() {
     const phone = $('input[name="phone"]').val();
     let address = '';
     if (autocomplete) {
-      autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
+      address = autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
     } else {
       address = $('input[name="address"]').val();
     }
