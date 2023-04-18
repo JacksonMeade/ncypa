@@ -4,9 +4,6 @@ window.mobileCheck = function() {
   return check;
 };
 
-const input = document.querySelector('input[name="address"]');
-const autocomplete = new google.maps.places.Autocomplete(input);
-
 const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
@@ -16,7 +13,7 @@ function updateFormData() {
     const name = $('input[name="name"]').val();
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
-    const address = autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
+    const address = window.autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
     const isJoiningMailList = $('input[name="mailing-list"]').is(':checked');
   
     // Update the text and textarea fields in the third fieldset with street number, street name, city, state, and zip
