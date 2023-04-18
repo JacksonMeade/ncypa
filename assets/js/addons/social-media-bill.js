@@ -152,7 +152,7 @@ function updateFormData() {
     const links = document.createElement('div');
     info.appendChild(links);
   
-    // Add buttons for each URL in the data
+/*     // Add buttons for each URL in the data
     data.urls.forEach(url => {
       const button = document.createElement('button');
       button.classList.add('social-button');
@@ -162,8 +162,21 @@ function updateFormData() {
         </a>
       `;
       links.appendChild(button);
-    });
+    }); */
   
+
+
+    data.phones.forEach(phone => {
+        const button = document.createElement('button');
+        button.classList.add('social-button');
+        button.innerHTML = `
+            <a target="_blank" href="tel:${phone}" class="no-interaction">
+                <img src="./assets/img/svg/phone.svg" class="social-icon">
+            </a>
+        `;
+        links.appendChild(button);
+    });
+
     // Add buttons for each channel in the data
     data.channels.forEach(channel => {
       const button = document.createElement('button');
