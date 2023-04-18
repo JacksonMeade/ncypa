@@ -4,6 +4,9 @@ window.mobileCheck = function() {
   return check;
 };
 
+const input = document.querySelector('input[name="address"]');
+const autocomplete = new google.maps.places.Autocomplete(input);
+
 const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
