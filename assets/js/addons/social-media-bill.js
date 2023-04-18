@@ -8,11 +8,28 @@ const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
 
-var autocomplete = null;
+let address = '';
 function initAutocomplete() {
-  autocomplete = new google.maps.places.Autocomplete(
-    $('input[name="address"]')[0]
-  );
+  // Create the autocomplete object and set the bounds
+  let autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'), {
+    types: ['geocode'],
+    componentRestrictions: {country: "us"}
+  });
+
+  // Add an event listener to wait for the place_changed event
+  autocomplete.addListener('place_changed', function() {
+    // Get the selected place from the autocomplete object
+    let place = autocomplete.getPlace();
+
+    // Check if the place is valid
+    if (!place.geometry) {
+      console.log("Invalid place selected");
+      return;
+    }
+
+    // Do something with the selected place
+    address = place.formatted_address;
+  });
 }
 
 function updateFormData() {
@@ -20,12 +37,6 @@ function updateFormData() {
     const name = $('input[name="name"]').val();
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
-    let address = '';
-    if (autocomplete) {
-      address = autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
-    } else {
-      address = $('input[name="address"]').val();
-    }
     const isJoiningMailList = $('input[name="mailing-list"]').is(':checked');
   
     // Update the text and textarea fields in the third fieldset with street number, street name, city, state, and zip
