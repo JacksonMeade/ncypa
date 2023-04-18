@@ -151,7 +151,6 @@ function updateFormData() {
     // Create links section
     const links = document.createElement('div');
     links.classList.add('social-links-container');
-    container.appendChild(links);
   
 /*     // Add buttons for each URL in the data
     data.urls.forEach(url => {
@@ -170,7 +169,6 @@ function updateFormData() {
     data.phones.forEach(phone => {
       const link = document.createElement('a');
       link.classList.add('no-interaction');
-      link.classList.add('social-icon');
       link.target = '_blank';
       link.href = `tel:${phone}`;
       link.innerHTML = `
@@ -183,7 +181,6 @@ function updateFormData() {
     data.channels.forEach(channel => {
       const link = document.createElement('a');
       link.classList.add('no-interaction');
-      link.classList.add('social-icon');
       link.target = '_blank';
       link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
       link.innerHTML = `
@@ -194,6 +191,7 @@ function updateFormData() {
 
     (hasPhoto) && container.appendChild(picture);
     container.appendChild(info);
+    container.appendChild(links);
   
     return container;
   }

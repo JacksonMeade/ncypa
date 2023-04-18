@@ -6,10 +6,11 @@
 #multistepsform {
   width: 90%;
   margin: 50px auto;
-  text-align: left;
+  text-align: center;
   position: relative;
 }
 #multistepsform fieldset {
+  text-align: left;
   background: white;
   border: 0 none;
   border-radius: 1rem;
