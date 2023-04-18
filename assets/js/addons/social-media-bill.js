@@ -123,19 +123,21 @@ function updateFormData() {
     container.classList.add('row');
 
     const picture = document.createElement('div');
-    picture.classList.add('profile-picture-container');
+    (data.photoUrl) ?? picture.classList.add('profile-picture-container');
     const info = document.createElement('div');
     info.classList.add('profile-info-container');
   
     // Create profile picture
-    const profilePicture = document.createElement('div');
+    const profilePicture = document.createElement('img');
     profilePicture.classList.add('profile-picture');
-    picture.appendChild(profilePicture);
+    profilePicture.src = data.photoUrl;
   
     // Create officer name
-    const officerName = document.createElement('h2');
-    officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
-    info.appendChild(officerName);
+    (data.photoUrl) ?? (() => {
+        const officerName = document.createElement('h2');
+        officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
+        info.appendChild(officerName);
+    })();
 
     // Create officer office
     const officerOffice = document.createElement('h3');
