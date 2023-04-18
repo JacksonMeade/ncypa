@@ -128,16 +128,17 @@ function updateFormData() {
     info.classList.add('profile-info-container');
   
     // Create profile picture
-    const profilePicture = document.createElement('img');
-    profilePicture.classList.add('profile-picture');
-    profilePicture.src = data.photoUrl;
+    (data.photoUrl) ?? (() => {
+        const profilePicture = document.createElement('img');
+        profilePicture.classList.add('profile-picture');
+        profilePicture.src = data.photoUrl;
+    })();
   
     // Create officer name
-    (data.photoUrl) ?? (() => {
-        const officerName = document.createElement('h2');
-        officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
-        info.appendChild(officerName);
-    })();
+    const officerName = document.createElement('h2');
+    officerName.textContent = `${data.name} (${data.party.charAt(0)})`;
+    info.appendChild(officerName);
+
 
     // Create officer office
     const officerOffice = document.createElement('h3');
