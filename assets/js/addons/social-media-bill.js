@@ -128,7 +128,7 @@ function updateFormData() {
     info.classList.add('profile-info-container');
   
     // Create profile picture
-    (data.photoUrl) ?? (() => {
+    (data.photoUrl) && (() => {
         const profilePicture = document.createElement('img');
         profilePicture.classList.add('profile-picture');
         profilePicture.src = data.photoUrl;
@@ -175,7 +175,7 @@ function updateFormData() {
       links.appendChild(button);
     });
 
-    (data.photoUrl) ?? container.appendChild(picture);
+    (data.photoUrl) && container.appendChild(picture);
     container.appendChild(info);
   
     return container;
