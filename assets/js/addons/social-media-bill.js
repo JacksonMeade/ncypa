@@ -13,7 +13,7 @@ function updateFormData() {
     const name = $('input[name="name"]').val();
     const email = $('input[name="email"]').val();
     const phone = $('input[name="phone"]').val();
-    const address = $('input[name="address"]').val();
+    const address = autocomplete.getPlace().formatted_address ?? $('input[name="address"]').val();
     const isJoiningMailList = $('input[name="mailing-list"]').is(':checked');
   
     // Update the text and textarea fields in the third fieldset with street number, street name, city, state, and zip
