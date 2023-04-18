@@ -8,6 +8,13 @@ const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
 
+var autocomplete = null;
+function initAutocomplete() {
+  autocomplete = new google.maps.places.Autocomplete(
+    $('input[name="address"]')[0]
+  );
+}
+
 function updateFormData() {
     // Get the input values from the first three fieldsets
     const name = $('input[name="name"]').val();
