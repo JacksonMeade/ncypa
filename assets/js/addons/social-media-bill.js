@@ -5,7 +5,7 @@ window.mobileCheck = function() {
 };
 
 const LAST_SLIDE = 3;
-const APP_URL = 'https://script.google.com/macros/s/AKfycbzmm99A2hwSprth15KNyhLaHXtXLsDRNzlCXvl6M1DgxfIU5AV7KNqDfDQ2_WNCiId-hQ/exec';
+const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
 
 function updateFormData() {
@@ -88,7 +88,7 @@ function updateFormData() {
         await waitforme(1276);
 
       try {
-        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyAnrUsAM4UGHyotngXazEsHwxbYpCL2Whg`);
+        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyC0n3TvlTQIAt1aW0fJawuWo8I7vfi2bbY`);
         const data = await response.json(); 
 
         if (data.error) {
