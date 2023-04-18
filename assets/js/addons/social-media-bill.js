@@ -177,7 +177,10 @@ function updateFormData() {
       link.classList.add('no-interaction');
       link.target = window.mobileCheck() ? '_blank' : '';
       link.href = window.mobileCheck() ? `tel:${phone}` : '';
-      link.onclick = window.mobileCheck() ? null : () => navigator.clipboard.writeText(phone);
+      link.onclick = (e) => {
+        e.preventDefault();
+        window.mobileCheck() ? null : navigator.clipboard.writeText(phone);
+      };
       link.title = window.mobileCheck() ? '' : 'Click to copy';
       link.style.marginLeft = '2px';
       link.style.marginRight = '2px';
