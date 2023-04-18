@@ -118,6 +118,7 @@ function updateFormData() {
   }
   
   function createRepresentativeProfile(data, office) {
+    let hasPhoto = false;
     const container = document.createElement('div');
     container.classList.add('profile-container');
     container.classList.add('row');
@@ -128,7 +129,7 @@ function updateFormData() {
     info.classList.add('profile-info-container');
   
     // Create profile picture
-    (data.photoUrl) && (() => {
+    (hasPhoto) && (() => {
         const profilePicture = document.createElement('img');
         profilePicture.classList.add('profile-picture');
         profilePicture.src = data.photoUrl;
@@ -175,7 +176,7 @@ function updateFormData() {
       links.appendChild(button);
     });
 
-    (data.photoUrl) && container.appendChild(picture);
+    (hasPhoto) && container.appendChild(picture);
     container.appendChild(info);
   
     return container;
