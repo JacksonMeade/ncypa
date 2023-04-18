@@ -11,7 +11,7 @@ let currentSlide = 0;
 let address = '';
 function initAutocomplete() {
   // Create the autocomplete object and set the bounds
-  let autocomplete = new google.maps.places.Autocomplete(document.getElementById('autocomplete'), {
+  let autocomplete = new google.maps.places.Autocomplete(document.querySelector('input[name="address"]'), {
     types: ['geocode'],
     componentRestrictions: {country: "us"}
   });
