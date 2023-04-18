@@ -21,9 +21,14 @@
 <script type="text/javascript" src="assets/js/index.js"></script>
 <!-- Google tag (gtag.js) --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2VTCFQJW6"></script> 
+<!-- Google Maps Autocomplete -->
 <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-Z2VTCFQJW6'); </script>
 {% for addon in page.js-addons %}
 <script type="text/javascript" src="assets/js/addons/{{ addon }}"></script>
 {% endfor %}
+<script async
+    id="google-maps"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPtkjkQl5CFyLUMC9pNtrWH--eC9v0jrQ&libraries=places&callback=initAutocomplete">
+</script>
 </body>
 </html> 
