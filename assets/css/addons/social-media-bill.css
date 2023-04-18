@@ -163,6 +163,7 @@
 
 .profile-container .profile-info-container {
   flex-grow: 1;
+  max-width: 80%;
 }
 
 .profile-container h2 {

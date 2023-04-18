@@ -183,6 +183,8 @@ function updateFormData() {
       link.classList.add('no-interaction');
       link.target = '_blank';
       link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
+      link.style.marginLeft = '5px';
+      link.style.marginRight = '5px';
       link.innerHTML = `
         <img src="./assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
       `;
