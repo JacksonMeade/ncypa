@@ -171,6 +171,8 @@ function updateFormData() {
       link.classList.add('no-interaction');
       link.target = '_blank';
       link.href = `tel:${phone}`;
+      link.style.marginLeft = '2px';
+      link.style.marginRight = '2px';
       link.innerHTML = `
         <img src="./assets/img/svg/phone.svg" class="social-icon">
       `;
@@ -183,8 +185,8 @@ function updateFormData() {
       link.classList.add('no-interaction');
       link.target = '_blank';
       link.href = `https://${channel.type.toLowerCase()}.com/${channel.id}`;
-      link.style.marginLeft = '5px';
-      link.style.marginRight = '5px';
+      link.style.marginLeft = '2px';
+      link.style.marginRight = '2px';
       link.innerHTML = `
         <img src="./assets/img/svg/${channel.type.toLowerCase()}.svg" class="social-icon">
       `;
