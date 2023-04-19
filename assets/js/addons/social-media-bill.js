@@ -4,9 +4,12 @@ window.mobileCheck = function() {
   return check;
 };
 
+const ALLOWED_OFFICES = ['Governor', 'State Senator', 'State Representative'];
+
 const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
 let currentSlide = 0;
+
 
 let address = '';
 function initAutocomplete() {
@@ -112,7 +115,7 @@ function updateFormData() {
         await waitforme(1276);
 
       try {
-        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&key=AIzaSyC0n3TvlTQIAt1aW0fJawuWo8I7vfi2bbY`);
+        const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?address=${a_address}&levels=administrativeArea1&key=AIzaSyC0n3TvlTQIAt1aW0fJawuWo8I7vfi2bbY`);
         const data = await response.json(); 
 
         if (data.error) {
@@ -123,6 +126,8 @@ function updateFormData() {
         $('#loading').replaceWith(`<div data-process="true"></div>`);
 
         data.offices.forEach(office => {
+            let found = ALLOWED_OFFICES.some((string) => office.name.includes(string));
+            if (!found) return;
             const representatives = getRepresentativesByOffice(data, office);
             $('div[data-process="true"]').append(representatives);
         });
