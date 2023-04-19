@@ -127,9 +127,10 @@ function updateFormData() {
 
         data.offices.forEach(office => {
             let found = ALLOWED_OFFICES.some((string) => office.name.includes(string));
-            if (!found) return;
-            const representatives = getRepresentativesByOffice(data, office);
-            $('div[data-process="true"]').append(representatives);
+            if (found) {
+              const representatives = getRepresentativesByOffice(data, office);
+              $('div[data-process="true"]').append(representatives);
+            }
         });
 
       } catch (error) {
