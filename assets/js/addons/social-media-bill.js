@@ -4,7 +4,7 @@ window.mobileCheck = function() {
   return check;
 };
 
-const ALLOWED_OFFICES = ['Governor', 'State Senator', 'State Representative'];
+const ALLOWED_OFFICES = ['Governor', 'Senator', 'Representative'];
 
 const LAST_SLIDE = 3;
 const APP_URL = 'https://script.google.com/macros/s/AKfycbwjkC1sOzBpsmWGuwTqrHxzHsNSqi55O8Bfa4ELzdxsAsYBslMACkCWXlXhD6C0v5fK/exec';
