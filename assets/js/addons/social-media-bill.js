@@ -52,8 +52,9 @@ function updateFormData() {
         formData.append('Name', name);
         formData.append('Email', email);
         formData.append('Phone', phone);
+        formData.append('IsJoiningMailList', isJoiningMailList ? 'Yes' : 'No');
 
-        (isJoiningMailList) && (async (a_formData) => {
+        (async (a_formData) => {
             try {
                 const response = await fetch(APP_URL, { 
                     method: 'POST',
