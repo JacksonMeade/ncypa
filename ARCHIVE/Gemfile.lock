@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    NCYPA (1.0.0)
+    YPA (1.0.0)
       jekyll (~> 4.2.2)
 
 GEM
@@ -67,7 +67,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  NCYPA!
+  YPA!
   jekyll (~> 4.2)
 
 BUNDLED WITH

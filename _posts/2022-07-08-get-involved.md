@@ -9,7 +9,7 @@ md-header img: ''
 ---
 
 ## Become a Campus Field Director
-We are always looking for talented students to start NCYPA teams at their campuses as Campus Field Directors. Our experienced Organizing Directors provide close mentorship to campus teams, helping students learn the skills needed to effectively advocate for youth issues on their campus and build a youth movement at their school.
+We are always looking for talented students to start YPA teams at their campuses as Campus Field Directors. Our experienced Organizing Directors provide close mentorship to campus teams, helping students learn the skills needed to effectively advocate for youth issues on their campus and build a youth movement at their school.
 
 Students can apply to become a Field Director at any time at the form below, but candidates will be primarily considered for the following semester after they apply, so candidates are encouraged to apply during their winter or summer break.
 
