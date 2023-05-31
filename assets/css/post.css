@@ -81,13 +81,13 @@
 	left: 20%;
 }
 
-.post-content a:not(.no-interaction):after {
+.post-content .button:not(.no-interaction):after {
 	bottom: -25%;
 	right: 20%;
 }
 
-.post-content a:not(.no-interaction):hover:before,
-.post-content a:not(.no-interaction):hover:after {
+.post-content .button:not(.no-interaction):hover:before,
+.post-content .button:not(.no-interaction):hover:after {
 	transform: none;
 }
 
