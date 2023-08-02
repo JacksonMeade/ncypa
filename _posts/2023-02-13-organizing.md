@@ -30,7 +30,4 @@ In our inaugural Democracy Day at Duke University in 2022, we coordinated a full
 
 We have obtained a large amount of support on our campuses in favor of Democracy Day. At UNC-Chapel Hill we have obtained 1,500 student petition signatures supporting Democracy Day, leading the Calendar Committee to recommend having a Democracy Day. At High Point University, we have obtained commitments from high-level administrators supporting Democracy Day. At other schools, we have gotten more student, institutional, and faculty support for implementing Democracy Day, such as more lenient attendance policies for Election Day and faculty governance body’s support. 
 
-
-![A graph showing the effect of Democracy Day on Durham voter turnout](/assets/img/democracy-day-graph.png)
-
 ![YPA advocates make posters for Democracy Day](/assets/img/democracy-day-signage.JPG)
