@@ -60,7 +60,7 @@
 }
 
 /* buttons */
-.post-content a:not(.no-interaction) {
+.post-content .button:not(.no-interaction) {
 	margin-top: 1em;
 	display: inline-block;
 	text-align: center;
@@ -76,18 +76,18 @@
 	font-size: 1.25rem;
 }
 
-.post-content a:not(.no-interaction):before {
+.post-content .button:not(.no-interaction):before {
 	top: -20%;
 	left: 20%;
 }
 
-.post-content a:not(.no-interaction):after {
+.post-content .button:not(.no-interaction):after {
 	bottom: -25%;
 	right: 20%;
 }
 
-.post-content a:not(.no-interaction):hover:before,
-.post-content a:not(.no-interaction):hover:after {
+.post-content .button:not(.no-interaction):hover:before,
+.post-content .button:not(.no-interaction):hover:after {
 	transform: none;
 }
 
@@ -100,15 +100,15 @@
 		width: 35%;
 	}
 
-	.post-content a:not(.no-interaction) {
+	.post-content .button:not(.no-interaction) {
 		margin-top: 0em;
 
 		filter: url('#goo');
 		padding: 1.5rem 0;
 	}
 
-	.post-content a:not(.no-interaction):before,
-	.post-content a:not(.no-interaction):after {
+	.post-content .button:not(.no-interaction):before,
+	.post-content .button:not(.no-interaction):after {
 		width: 4.4em;
 		height: 2.95em;
 		position: absolute;
@@ -121,8 +121,8 @@
 		z-index: -1;
 	}
 
-	.post-content a:not(.no-interaction)-inverse:before,
-	.post-content a:not(.no-interaction)-inverse:after {
+	.post-content .button:not(.no-interaction)-inverse:before,
+	.post-content .button:not(.no-interaction)-inverse:after {
 		background: white;
 	}
 }

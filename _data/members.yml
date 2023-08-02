@@ -1,83 +1,77 @@
 - name: Sam Hiner
   position: Executive Director
   school: UNC Chapel Hill
-  year: Sophomore
-  hometown: Mooresville, N.C.
+  year: Junior
+  hometown: Mooresville, NC
   
 - name: Mick Tobin
   position: Operations Director
   school: Duke University
-  year: Sophomore
-  hometown: Mooresville, N.C.
+  year: Junior
+  hometown: Mooresville, NC
 
 - name: Alexandre Dray
   position: Field Operations Director
   school: Duke University
-  year: Sophomore
-  hometown: Miami, Fl.
-
-- name: Leah Kann
-  position: Field Operations Director
-  school: UNC Chapel Hill
-  year: Sophomore
-  hometown: Washington, D.C.
-
-- name: Rachel Palmroos
-  position: UNC Charlotte Field Director
-  school: UNC Charlotte
   year: Junior
-  hometown: Charlotte, N.C.
+  hometown: Miami, FL
+
+- name: Elina Murarka
+  position: Communications Director
+  school: Duke University
+  year: Junior
+  hometown: New Haven, CT
+
+- name: Ava Smithing
+  position: Federal Advocacy Associate
+  school: Stevens Institute of Technology
+  year: Class of '23
+  hometown: Nashville, TN
+
+- name: Noah Coffman
+  position: Research & Policy Director
+  school: University of Notre Dame
+  year: Junior
+  hometown: Tulsa, OK
+
+- name: Neil Sairam
+  position: Federal Advocacy Associate
+  school: George Washington University
+  year: Junior
+  hometown: Washington, DC
+
+- name: Andrew Fingeret
+  position: Federal Advocacy Associate
+  school: George Washington University
+  year: Senior
+  hometown: Pittsburgh, PA
 
 - name: Kennedy Smith
-  position: ECU Field Director
+  position: Campus Field Director
   school: East Carolina University
   year: Junior
   hometown: Raleigh, NC
 
-- name: Anu Mishra
-  position: NC State Field Director
-  school: NC State University
+- name: Amarah Din
+  position: Campus Field Director
+  school: Appalachian State University
   year: Junior
   hometown: Cary, NC
 
-- name: Tyler Smith
-  position: Communications Director
-  school: UNC Chapel Hill
-  year: Junior
-  hometown: Wilmington, N.C.
-
-- name: Chloe Decker
-  position: Communications Director
-  school: Duke University
+- name: Joyane Longmiere
+  position: Campus Field Director
+  school: North Carolina A&T State University
   year: Sophomore
-  hometown: Murphy, N.C.
+  hometown: Raleigh, NC
 
-- name: Sananda Jagannathan
-  position: Partnerships/Fundraising Director
-  school: UNC Chapel Hill
+- name: Briana Harmon
+  position: Campus Field Director
+  school: Davidson College
   year: Sophomore
-  hometown: Chapel Hill, NC
+  hometown: Kamuela, Hawai'i
 
 - name: Jackson Meade
   position: Webmaster
   school: UNC Chapel Hill
   year: Junior
   hometown: Charlotte, N.C.
-  
-- name: Haleigh Eubanks
-  position: Senior Advisor for Communications
-  school: NC State University
-  year: Graduate Student
-  hometown: Charlotte, N.C.
-
-- name: Elijah King
-  position: Senior Advisor for Fundraising
-  school: UNC Greensboro
-  year: Junior
-  hometown: Durham, N.C.
-  
-- name: Cora Martin
-  position: Senior Advisor for Community
-  school: UNC Chapel Hill
-  year: Senior
-  hometown: Durham, N.C.
