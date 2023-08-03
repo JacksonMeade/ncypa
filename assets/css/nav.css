@@ -33,6 +33,10 @@ header {
     transition: top 0.2s ease, left 0.2s ease, color 0.2s ease;
   }
 
+  header .brand img {
+    max-width: 7rem;
+  }
+
   header .links {
     margin-top: 2.5rem;
     transition: margin-top 0.2s ease;
@@ -236,12 +240,18 @@ background-color: white;
     right: 1.5rem;
 }
 
-.mobile-nav.scrolled .menu-container:not(.full-menu) {
-    right: 3.5rem;
+
+header.scrolled .brand {
+    max-width: 5rem;
 }
 
 html[data-site="EF"] .mobile-nav.scrolled .menu-container:not(.full-menu) {
     right: 1rem;
+}
+
+.mobile-nav.scrolled .menu {
+    top: 160px;
+    right: 2rem;
 }
 
 @media only screen and (min-width: 950px) {
