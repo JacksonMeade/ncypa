@@ -1,77 +1,69 @@
 - name: Sam Hiner
-  position: Executive Director
-  school: UNC Chapel Hill
-  year: Junior
-  hometown: Mooresville, NC
-  
-- name: Mick Tobin
-  position: Operations Director
-  school: Duke University
-  year: Junior
+  position: Executive Director & Co-Founder
+  details: Student at UNC Chapel Hill
   hometown: Mooresville, NC
 
+- name: Ava Smithing
+  position: Advocacy & Community Director
+  details: Full-time employee
+  hometown: Nashville, TN
+  
 - name: Alexandre Dray
   position: Field Operations Director
-  school: Duke University
-  year: Junior
+  details: Student at Duke University
   hometown: Miami, FL
+
+- name: Mick Tobin
+  position: Operations Director & Co-Founder
+  details: Student at Duke University
+  hometown: Mooresville, NC
 
 - name: Elina Murarka
   position: Communications Director
-  school: Duke University
-  year: Junior
+  details: Student at Duke University
   hometown: New Haven, CT
-
-- name: Ava Smithing
-  position: Federal Advocacy Associate
-  school: Stevens Institute of Technology
-  year: Class of '23
-  hometown: Nashville, TN
 
 - name: Noah Coffman
   position: Research & Policy Director
-  school: University of Notre Dame
-  year: Junior
+  details: Student at University of Notre Dame
   hometown: Tulsa, OK
 
-- name: Neil Sairam
-  position: Federal Advocacy Associate
-  school: George Washington University
-  year: Junior
-  hometown: Washington, DC
-
-- name: Andrew Fingeret
-  position: Federal Advocacy Associate
-  school: George Washington University
-  year: Senior
-  hometown: Pittsburgh, PA
+- name: Colby Kelley
+  position: Compliance Director
+  details: Student at UNC-Chapel Hill
+  hometown: Mooresville, NC
 
 - name: Kennedy Smith
   position: Campus Field Director
-  school: East Carolina University
-  year: Junior
+  details: Student at East Carolina University
   hometown: Raleigh, NC
 
 - name: Amarah Din
   position: Campus Field Director
-  school: Appalachian State University
-  year: Junior
+  details: Student at Appalachian State University
   hometown: Cary, NC
 
-- name: Joyane Longmiere
+- name: Joyane Longmire
   position: Campus Field Director
-  school: North Carolina A&T State University
-  year: Sophomore
+  details: Student at North Carolina A&T State University
   hometown: Raleigh, NC
 
 - name: Briana Harmon
   position: Campus Field Director
-  school: Davidson College
-  year: Sophomore
+  details: Student at Davidson College
   hometown: Kamuela, Hawai'i
 
-- name: Jackson Meade
-  position: Webmaster
-  school: UNC Chapel Hill
-  year: Junior
-  hometown: Charlotte, N.C.
+- name: Maite McPherson
+  position: Campus Field Director
+  details: Student at Duke University
+  hometown: Marshall, MN
+
+- name: Emily Wilson
+  position: Campus Field Director
+  details: Student at North Carolina A&T State University
+  hometown: Detroit, Michigan
+
+- name: Drayton Coleman
+  position: Campus Field Director
+  details: Student at UNC-Greensboro
+  hometown: Durham, NC
