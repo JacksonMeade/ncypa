@@ -375,7 +375,7 @@ html[data-site="EF"] .mobile-nav.scrolled .menu-container:not(.full-menu) {
     font-size: 4.2rem;
 }
 .overlay ul li a.logo::after {
-    content: "North Carolina Young People's Alliance";
+    content: "Young People's Alliance";
     position: absolute;
     white-space: nowrap;
     top: 4.2rem;
