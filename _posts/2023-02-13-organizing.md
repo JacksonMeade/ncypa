@@ -20,7 +20,7 @@ To build the political power of young people, we mobilize students around our ca
 
 Then, we partner with university offices and student groups to build a grass-roots voter turnout campaign. This campaign leverages both traditional and social media to raise awareness about the importance of voting in an election and helps students understand the Voter ID requirements to vote on their campus. 
 
-Over our 11 campuses, this operation has registered over 1,700 new students voters. We have also turned out over 4,000 students to vote. 
+Over our 11 campuses, this operation has registered over 1,700 new students voters. We have also reached over 10,000 students with high-quality, in-person mobilizations. 
 
 ![Mobilizing Youth Voters](/assets/img/voter-mobilization.JPEG)
 
