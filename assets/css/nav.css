@@ -43,14 +43,21 @@ header {
     flex-shrink: 0;
   }
 
-  header .links a {
+  header .links>* {
     position: relative;
     color: white;
-    margin-left: 10px;
     font-size: 1.2em;
     padding: 0.5rem 1.75rem;
     text-decoration: none;
     transition: color 0.2s ease;
+  }
+
+  header.scrolled .links>* {
+    margin-left: 10px;
+  }
+
+  header .links>*:hover, header .links>*:focus {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   header.scrolled .links {
@@ -74,8 +81,8 @@ header {
     opacity: 0;
     transition: opacity 0.2s ease, box-shadow 0.2s ease, margin-top 0.2s ease;
 
-    -webkit-box-shadow: 2px 2px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(204,0,0,0); 
-    box-shadow: 2px 2px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(204,0,0,0);
+    /* -webkit-box-shadow: 2px 2px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(204,0,0,0); 
+    box-shadow: 2px 2px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(192,0,0,0.4), 5px 5px 0px 0px rgba(204,0,0,0); */
   }
 
   header .links a:hover::before {
@@ -453,3 +460,69 @@ html[data-site="EF"] .mobile-nav.scrolled .menu-container:not(.full-menu) {
     z-index: -10;
 }
 
+
+/* Dropdown Button */
+.dropbtn {
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0 !important;
+  }
+
+  .dropdown a {
+    padding: 0 1.75rem;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0.5rem;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    background-color: rgb(15,86,151);
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {    background-color: rgb(34, 108, 178);
+}
+
+header.scrolled .dropdown-content a {
+    background-color: white;
+    border-radius: 2rem;
+    color: black;
+  }
+
+header.scrolled .dropdown-content {
+    border-radius: 2rem;
+  }
+
+header:scrolled .dropdown:hover {
+    background-color: white;
+    border-radius: 2rem;
+}
+
+header.scrolled .dropdown-content a:hover {
+    background-color: rgb(15,86,151);
+    color: white;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
