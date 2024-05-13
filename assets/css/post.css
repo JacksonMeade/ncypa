@@ -18,11 +18,11 @@
 
 /* objects */
 .post-content h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 .post-content h3 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 
 .post-content button {
@@ -104,7 +104,7 @@
 		margin-top: 0em;
 
 		filter: url('#goo');
-		padding: 1.5rem 0;
+		/*padding: 1.5rem 0;*/
 	}
 
 	.post-content .button:not(.no-interaction):before,
