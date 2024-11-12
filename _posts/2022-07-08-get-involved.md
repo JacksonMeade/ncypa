@@ -10,14 +10,9 @@ md-header img: ''
 
 ## Join YPA
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdirKg5havotWp2KCw5m9nAfdApCesO9lVnJ5zc8SwXRuffxA/viewform?embedded=true" width="100%" height="962px" style="min-height:962px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+Become a member of YPA to help set the agenda for the youth movement. As a member, you get to work on real policy change that affects your generation and access to a community of youth advocates.
 
-## Become a Field Director
-We are always looking for talented students to start YPA teams at their campuses as Campus Field Directors. Our experienced Organizing Directors provide close mentorship to campus teams, helping students learn the skills needed to effectively advocate for youth issues on their campus and build a youth movement at their school.
-
-Students can apply to become a Field Director at any time at the form below, but candidates will be primarily considered for the following semester after they apply, so candidates are encouraged to apply during their winter or summer break.
-
-<a class="button" href="https://forms.gle/8mCSPgZNqptk6MYq7" target="_blank">Apply</a>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc8AoXadBM-nXAIemf9pvG-u-vCmFkJGqoORiNoGRfWh_GMgA/viewform?usp=sf_link" width="100%" height="962px" style="min-height:962px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 ## Contact Us
 
